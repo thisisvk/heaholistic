@@ -1422,10 +1422,10 @@ video {
     max-width: 100%;
 }
 
-.split-header #logo a img {
+/* .split-header #logo a img {
     max-width: 100%;
     max-height: 100%;
-}
+} */
 
 /* .split-header #main-menu .menu-left,
 .split-header #main-menu .menu-right {
@@ -5466,9 +5466,9 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-devicepixel-ratio: 1.5),
 only screen and (min-resolution: 1.5dppx) {
-    .normal_logo {
+    /* .normal_logo {
         display: none;
-    }
+    } */
     .retina_logo {
         display: block;
     }
