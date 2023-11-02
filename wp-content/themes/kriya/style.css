@@ -1405,22 +1405,9 @@ video {
     top: 0;
 }
 
-.split-header #logo {
-    position: absolute;
-    left: 0;
-    /* right: 0; */
-    top: 0;
-    bottom: 0;
-    /* margin: auto; */
-    width: 12%;
-    /* text-align: center; */
-    z-index: 9999;
-}
 
-.split-header #logo a {
-    display: inline-block;
-    max-width: 100%;
-}
+
+
 
 /* .split-header #logo a img {
     max-width: 100%;
@@ -4929,9 +4916,6 @@ ul.commentlist li.bypostauthor .author-name {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.footer-copyright {
-    background-color: rgba(0, 0, 0, 0.6);
-}
 
 .dt-sc-contact-form p input[type="submit"]:hover,
 .dt-sc-appointment-form p input[type="submit"]:hover {

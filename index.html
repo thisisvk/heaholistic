@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: https://ogp.me/ns#" class="no-js">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -8,8 +9,9 @@
 	<link rel="pingback" href="https://kriyawp.wpengine.com/xmlrpc.php">
 	<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
 	<title>Reckhha Malhotra</title>
-	<link href='https://kriyawp.wpengine.com/wp-content/themes/kriya/images/favicon.png' rel='shortcut icon'
-		type='image/x-icon' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<link href='footerlogo.png' rel='shortcut icon' type='image/x-icon' />
 	<link href='https://kriyawp.wpengine.com/wp-content/themes/kriya/images/apple-touch-icon.png'
 		rel='apple-touch-icon-precomposed' />
 	<link href='https://kriyawp.wpengine.com/wp-content/themes/kriya/images/apple-touch-icon-114x114.png'
@@ -69,6 +71,159 @@
 			vertical-align: -0.1em !important;
 			background: none !important;
 			padding: 0 !important;
+		}
+	</style>
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+		@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+		}
+
+		.slider {
+			height: 500px;
+			position: relative;
+			overflow: hidden;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: row nowrap;
+			-ms-flex-flow: row nowrap;
+			flex-flow: row nowrap;
+			-webkit-box-align: end;
+			-webkit-align-items: flex-end;
+			-ms-flex-align: end;
+			align-items: flex-end;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+		}
+
+		.slider__nav {
+			width: 12px;
+			height: 12px;
+			margin: 2rem 12px;
+			border-radius: 50%;
+			z-index: 10;
+			outline: 6px solid #ccc;
+			outline-offset: -6px;
+			box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+			cursor: pointer;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+
+		.slider__nav:checked {
+			-webkit-animation: check 0.4s linear forwards;
+			animation: check 0.4s linear forwards;
+		}
+
+		.slider__nav:checked:nth-of-type(1)~.slider__inner {
+			left: 0%;
+		}
+
+		.slider__nav:checked:nth-of-type(2)~.slider__inner {
+			left: -100%;
+		}
+
+		.slider__nav:checked:nth-of-type(3)~.slider__inner {
+			left: -200%;
+		}
+
+		.slider__nav:checked:nth-of-type(4)~.slider__inner {
+			left: -300%;
+		}
+
+		.slider__inner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 400%;
+			height: 100%;
+			-webkit-transition: left 0.4s;
+			transition: left 0.4s;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-flow: row nowrap;
+			-ms-flex-flow: row nowrap;
+			flex-flow: row nowrap;
+		}
+
+		.slider__contents {
+			height: 100%;
+			padding: 2rem;
+			text-align: center;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-flex: 1;
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			-webkit-flex-flow: column nowrap;
+			-ms-flex-flow: column nowrap;
+			flex-flow: column nowrap;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+		}
+
+		.slider__image {
+			font-size: 2.7rem;
+			color: #2196F3;
+		}
+
+		.slider__caption {
+			font-weight: 500;
+			margin: 2rem 0 1rem;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+			text-transform: uppercase;
+		}
+
+		.slider__txt {
+			color: #999;
+			margin-bottom: 3rem;
+			max-width: 300px;
+		}
+
+		@-webkit-keyframes check {
+			50% {
+				outline-color: #333;
+				box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+			}
+
+			100% {
+				outline-color: #333;
+				box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+			}
+		}
+
+		@keyframes check {
+			50% {
+				outline-color: #333;
+				box-shadow: 0 0 0 12px #333, 0 0 0 36px rgba(51, 51, 51, 0.2);
+			}
+
+			100% {
+				outline-color: #333;
+				box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+			}
 		}
 	</style>
 	<link rel='stylesheet' id='wp-block-library-css'
@@ -262,6 +417,8 @@
 			padding: 1.25em 2.375em
 		}
 	</style>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel='stylesheet' id='wc-block-vendors-style-css'
 		href='https://kriyawp.wpengine.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=3.8.1'
 		type='text/css' media='all' />
@@ -777,8 +934,7 @@
 	<link rel='stylesheet' id='stroke-gap-icons-css'
 		href='https://kriyawp.wpengine.com/wp-content/plugins/designthemes-core-features/css/stroke-gap-icons-style.css'
 		type='text/css' media='all' />
-	<link rel='stylesheet' id='kriya-style-css'
-		href='wp-content/themes/kriya/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='kriya-style-css' href='wp-content/themes/kriya/style.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='prettyPhoto-css'
 		href='https://kriyawp.wpengine.com/wp-content/themes/kriya/css/prettyPhoto.css?ver=6.3' type='text/css'
 		media='all' />
@@ -788,8 +944,7 @@
 	<link rel='stylesheet' id='kriya-woo-style-css'
 		href='https://kriyawp.wpengine.com/wp-content/themes/kriya/css/woocommerce.css?ver=6.3' type='text/css'
 		media='all' />
-	<link rel='stylesheet' id='kriya-skin-css'
-		href='wp-content/themes/kriya/css/skins/brown/style.css' type='text/css'
+	<link rel='stylesheet' id='kriya-skin-css' href='wp-content/themes/kriya/css/skins/brown/style.css' type='text/css'
 		media='all' />
 	<link rel='stylesheet' id='kriya-responsive-css'
 		href='https://kriyawp.wpengine.com/wp-content/themes/kriya/css/responsive.css?ver=6.3' type='text/css'
@@ -803,6 +958,11 @@
 	<link rel='stylesheet' id='kriya-gutenberg-css'
 		href='https://kriyawp.wpengine.com/wp-content/themes/kriya/css/gutenberg.css?ver=all' type='text/css'
 		media='all' />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
 	<style id='kriya-gutenberg-inline-css' type='text/css'>
 		.has-primary-background-color {
 			background-color: #7e8446;
@@ -1011,16 +1171,14 @@
 			color: #484338;
 		}
 
-		.footer-copyright {
-			background: rgba(0, 0, 0, 0.6);
-		}
+
 
 		#footer .footer-copyright {
 			color: #a58251;
 		}
 
 		#footer .footer-copyright a {
-			color: #a58251;
+			color: #fff;
 		}
 
 		#footer .footer-copyright a:hover {
@@ -1065,6 +1223,706 @@
 			font-family: PT Serif
 		}
 	</style>
+	<style>
+		.testim {
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translatey(-50%);
+			-moz-transform: translatey(-50%);
+			-ms-transform: translatey(-50%);
+			-o-transform: translatey(-50%);
+			transform: translatey(-50%);
+		}
+
+		.testim .wrap {
+			position: relative;
+			width: 100%;
+			max-width: 1020px;
+			padding: 40px 20px;
+			margin: auto;
+		}
+
+		.testim .arrow {
+			display: block;
+			position: absolute;
+			color: #eee;
+			cursor: pointer;
+			font-size: 2em;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			-webkit-transition: all .3s ease-in-out;
+			-ms-transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			-o-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+			padding: 5px;
+			z-index: 22222222;
+		}
+
+		.testim .arrow:before {
+			cursor: pointer;
+		}
+
+		.testim .arrow:hover {
+			color: #ea830e;
+		}
+
+
+		.testim .arrow.left {
+			left: 10px;
+		}
+
+		.testim .arrow.right {
+			right: 10px;
+		}
+
+		.testim .dots {
+			text-align: center;
+			position: absolute;
+			width: 100%;
+			bottom: 60px;
+			left: 0;
+			display: block;
+			z-index: 3333;
+			height: 12px;
+		}
+
+		.testim .dots .dot {
+			list-style-type: none;
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			border: 1px solid #eee;
+			margin: 0 10px;
+			cursor: pointer;
+			-webkit-transition: all .5s ease-in-out;
+			-ms-transition: all .5s ease-in-out;
+			-moz-transition: all .5s ease-in-out;
+			-o-transition: all .5s ease-in-out;
+			transition: all .5s ease-in-out;
+			position: relative;
+		}
+
+		.testim .dots .dot.active,
+		.testim .dots .dot:hover {
+			background: #ea830e;
+			border-color: #ea830e;
+		}
+
+		.testim .dots .dot.active {
+			-webkit-animation: testim-scale .5s ease-in-out forwards;
+			-moz-animation: testim-scale .5s ease-in-out forwards;
+			-ms-animation: testim-scale .5s ease-in-out forwards;
+			-o-animation: testim-scale .5s ease-in-out forwards;
+			animation: testim-scale .5s ease-in-out forwards;
+		}
+
+		.testim .cont {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.testim .cont>div {
+			text-align: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0 0 70px 0;
+			opacity: 0;
+		}
+
+		.testim .cont>div.inactive {
+			opacity: 1;
+		}
+
+
+		.testim .cont>div.active {
+			position: relative;
+			opacity: 1;
+		}
+
+
+		.testim .cont div .img img {
+			display: block;
+			width: 100px;
+			height: 100px;
+			margin: auto;
+			border-radius: 50%;
+		}
+
+		.testim .cont div h2 {
+			color: #ea830e;
+			font-size: 1em;
+			margin: 15px 0;
+		}
+
+		.testim .cont div p {
+			font-size: 1.15em;
+			color: #eee;
+			width: 80%;
+			margin: auto;
+		}
+
+		.testim .cont div.active .img img {
+			-webkit-animation: testim-show .5s ease-in-out forwards;
+			-moz-animation: testim-show .5s ease-in-out forwards;
+			-ms-animation: testim-show .5s ease-in-out forwards;
+			-o-animation: testim-show .5s ease-in-out forwards;
+			animation: testim-show .5s ease-in-out forwards;
+		}
+
+		.testim .cont div.active h2 {
+			-webkit-animation: testim-content-in .4s ease-in-out forwards;
+			-moz-animation: testim-content-in .4s ease-in-out forwards;
+			-ms-animation: testim-content-in .4s ease-in-out forwards;
+			-o-animation: testim-content-in .4s ease-in-out forwards;
+			animation: testim-content-in .4s ease-in-out forwards;
+		}
+
+		.testim .cont div.active p {
+			-webkit-animation: testim-content-in .5s ease-in-out forwards;
+			-moz-animation: testim-content-in .5s ease-in-out forwards;
+			-ms-animation: testim-content-in .5s ease-in-out forwards;
+			-o-animation: testim-content-in .5s ease-in-out forwards;
+			animation: testim-content-in .5s ease-in-out forwards;
+		}
+
+		.testim .cont div.inactive .img img {
+			-webkit-animation: testim-hide .5s ease-in-out forwards;
+			-moz-animation: testim-hide .5s ease-in-out forwards;
+			-ms-animation: testim-hide .5s ease-in-out forwards;
+			-o-animation: testim-hide .5s ease-in-out forwards;
+			animation: testim-hide .5s ease-in-out forwards;
+		}
+
+		.testim .cont div.inactive h2 {
+			-webkit-animation: testim-content-out .4s ease-in-out forwards;
+			-moz-animation: testim-content-out .4s ease-in-out forwards;
+			-ms-animation: testim-content-out .4s ease-in-out forwards;
+			-o-animation: testim-content-out .4s ease-in-out forwards;
+			animation: testim-content-out .4s ease-in-out forwards;
+		}
+
+		.testim .cont div.inactive p {
+			-webkit-animation: testim-content-out .5s ease-in-out forwards;
+			-moz-animation: testim-content-out .5s ease-in-out forwards;
+			-ms-animation: testim-content-out .5s ease-in-out forwards;
+			-o-animation: testim-content-out .5s ease-in-out forwards;
+			animation: testim-content-out .5s ease-in-out forwards;
+		}
+
+		@-webkit-keyframes testim-scale {
+			0% {
+				-webkit-box-shadow: 0px 0px 0px 0px #eee;
+				box-shadow: 0px 0px 0px 0px #eee;
+			}
+
+			35% {
+				-webkit-box-shadow: 0px 0px 10px 5px #eee;
+				box-shadow: 0px 0px 10px 5px #eee;
+			}
+
+			70% {
+				-webkit-box-shadow: 0px 0px 10px 5px #ea830e;
+				box-shadow: 0px 0px 10px 5px #ea830e;
+			}
+
+			100% {
+				-webkit-box-shadow: 0px 0px 0px 0px #ea830e;
+				box-shadow: 0px 0px 0px 0px #ea830e;
+			}
+		}
+
+		@-moz-keyframes testim-scale {
+			0% {
+				-moz-box-shadow: 0px 0px 0px 0px #eee;
+				box-shadow: 0px 0px 0px 0px #eee;
+			}
+
+			35% {
+				-moz-box-shadow: 0px 0px 10px 5px #eee;
+				box-shadow: 0px 0px 10px 5px #eee;
+			}
+
+			70% {
+				-moz-box-shadow: 0px 0px 10px 5px #ea830e;
+				box-shadow: 0px 0px 10px 5px #ea830e;
+			}
+
+			100% {
+				-moz-box-shadow: 0px 0px 0px 0px #ea830e;
+				box-shadow: 0px 0px 0px 0px #ea830e;
+			}
+		}
+
+		@-ms-keyframes testim-scale {
+			0% {
+				-ms-box-shadow: 0px 0px 0px 0px #eee;
+				box-shadow: 0px 0px 0px 0px #eee;
+			}
+
+			35% {
+				-ms-box-shadow: 0px 0px 10px 5px #eee;
+				box-shadow: 0px 0px 10px 5px #eee;
+			}
+
+			70% {
+				-ms-box-shadow: 0px 0px 10px 5px #ea830e;
+				box-shadow: 0px 0px 10px 5px #ea830e;
+			}
+
+			100% {
+				-ms-box-shadow: 0px 0px 0px 0px #ea830e;
+				box-shadow: 0px 0px 0px 0px #ea830e;
+			}
+		}
+
+		@-o-keyframes testim-scale {
+			0% {
+				-o-box-shadow: 0px 0px 0px 0px #eee;
+				box-shadow: 0px 0px 0px 0px #eee;
+			}
+
+			35% {
+				-o-box-shadow: 0px 0px 10px 5px #eee;
+				box-shadow: 0px 0px 10px 5px #eee;
+			}
+
+			70% {
+				-o-box-shadow: 0px 0px 10px 5px #ea830e;
+				box-shadow: 0px 0px 10px 5px #ea830e;
+			}
+
+			100% {
+				-o-box-shadow: 0px 0px 0px 0px #ea830e;
+				box-shadow: 0px 0px 0px 0px #ea830e;
+			}
+		}
+
+		@keyframes testim-scale {
+			0% {
+				box-shadow: 0px 0px 0px 0px #eee;
+			}
+
+			35% {
+				box-shadow: 0px 0px 10px 5px #eee;
+			}
+
+			70% {
+				box-shadow: 0px 0px 10px 5px #ea830e;
+			}
+
+			100% {
+				box-shadow: 0px 0px 0px 0px #ea830e;
+			}
+		}
+
+		@-webkit-keyframes testim-content-in {
+			from {
+				opacity: 0;
+				-webkit-transform: translateY(100%);
+				transform: translateY(100%);
+			}
+
+			to {
+				opacity: 1;
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+
+		@-moz-keyframes testim-content-in {
+			from {
+				opacity: 0;
+				-moz-transform: translateY(100%);
+				transform: translateY(100%);
+			}
+
+			to {
+				opacity: 1;
+				-moz-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+
+		@-ms-keyframes testim-content-in {
+			from {
+				opacity: 0;
+				-ms-transform: translateY(100%);
+				transform: translateY(100%);
+			}
+
+			to {
+				opacity: 1;
+				-ms-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+
+		@-o-keyframes testim-content-in {
+			from {
+				opacity: 0;
+				-o-transform: translateY(100%);
+				transform: translateY(100%);
+			}
+
+			to {
+				opacity: 1;
+				-o-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes testim-content-in {
+			from {
+				opacity: 0;
+				transform: translateY(100%);
+			}
+
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@-webkit-keyframes testim-content-out {
+			from {
+				opacity: 1;
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			to {
+				opacity: 0;
+				-webkit-transform: translateY(-100%);
+				transform: translateY(-100%);
+			}
+		}
+
+		@-moz-keyframes testim-content-out {
+			from {
+				opacity: 1;
+				-moz-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			to {
+				opacity: 0;
+				-moz-transform: translateY(-100%);
+				transform: translateY(-100%);
+			}
+		}
+
+		@-ms-keyframes testim-content-out {
+			from {
+				opacity: 1;
+				-ms-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			to {
+				opacity: 0;
+				-ms-transform: translateY(-100%);
+				transform: translateY(-100%);
+			}
+		}
+
+		@-o-keyframes testim-content-out {
+			from {
+				opacity: 1;
+				-o-transform: translateY(0);
+				transform: translateY(0);
+			}
+
+			to {
+				opacity: 0;
+				transform: translateY(-100%);
+				transform: translateY(-100%);
+			}
+		}
+
+		@keyframes testim-content-out {
+			from {
+				opacity: 1;
+				transform: translateY(0);
+			}
+
+			to {
+				opacity: 0;
+				transform: translateY(-100%);
+			}
+		}
+
+		@-webkit-keyframes testim-show {
+			from {
+				opacity: 0;
+				-webkit-transform: scale(0);
+				transform: scale(0);
+			}
+
+			to {
+				opacity: 1;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+
+		@-moz-keyframes testim-show {
+			from {
+				opacity: 0;
+				-moz-transform: scale(0);
+				transform: scale(0);
+			}
+
+			to {
+				opacity: 1;
+				-moz-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+
+		@-ms-keyframes testim-show {
+			from {
+				opacity: 0;
+				-ms-transform: scale(0);
+				transform: scale(0);
+			}
+
+			to {
+				opacity: 1;
+				-ms-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+
+		@-o-keyframes testim-show {
+			from {
+				opacity: 0;
+				-o-transform: scale(0);
+				transform: scale(0);
+			}
+
+			to {
+				opacity: 1;
+				-o-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+
+		@keyframes testim-show {
+			from {
+				opacity: 0;
+				transform: scale(0);
+			}
+
+			to {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+
+		@-webkit-keyframes testim-hide {
+			from {
+				opacity: 1;
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+
+			to {
+				opacity: 0;
+				-webkit-transform: scale(0);
+				transform: scale(0);
+			}
+		}
+
+		@-moz-keyframes testim-hide {
+			from {
+				opacity: 1;
+				-moz-transform: scale(1);
+				transform: scale(1);
+			}
+
+			to {
+				opacity: 0;
+				-moz-transform: scale(0);
+				transform: scale(0);
+			}
+		}
+
+		@-ms-keyframes testim-hide {
+			from {
+				opacity: 1;
+				-ms-transform: scale(1);
+				transform: scale(1);
+			}
+
+			to {
+				opacity: 0;
+				-ms-transform: scale(0);
+				transform: scale(0);
+			}
+		}
+
+		@-o-keyframes testim-hide {
+			from {
+				opacity: 1;
+				-o-transform: scale(1);
+				transform: scale(1);
+			}
+
+			to {
+				opacity: 0;
+				-o-transform: scale(0);
+				transform: scale(0);
+			}
+		}
+
+		@keyframes testim-hide {
+			from {
+				opacity: 1;
+				transform: scale(1);
+			}
+
+			to {
+				opacity: 0;
+				transform: scale(0);
+			}
+		}
+
+		@media all and (max-width: 300px) {
+			body {
+				font-size: 14px;
+			}
+		}
+
+		@media all and (max-width: 500px) {
+			.testim .arrow {
+				font-size: 1.5em;
+			}
+
+			.testim .cont div p {
+				line-height: 25px;
+			}
+
+		}
+	</style>
+	<script>
+		// vars
+		'use strict'
+		var testim = document.getElementById("testim"),
+			testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+			testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+			testimLeftArrow = document.getElementById("left-arrow"),
+			testimRightArrow = document.getElementById("right-arrow"),
+			testimSpeed = 4500,
+			currentSlide = 0,
+			currentActive = 0,
+			testimTimer,
+			touchStartPos,
+			touchEndPos,
+			touchPosDiff,
+			ignoreTouch = 30;
+		;
+
+		window.onload = function () {
+
+			// Testim Script
+			function playSlide(slide) {
+				for (var k = 0; k < testimDots.length; k++) {
+					testimContent[k].classList.remove("active");
+					testimContent[k].classList.remove("inactive");
+					testimDots[k].classList.remove("active");
+				}
+
+				if (slide < 0) {
+					slide = currentSlide = testimContent.length - 1;
+				}
+
+				if (slide > testimContent.length - 1) {
+					slide = currentSlide = 0;
+				}
+
+				if (currentActive != currentSlide) {
+					testimContent[currentActive].classList.add("inactive");
+				}
+				testimContent[slide].classList.add("active");
+				testimDots[slide].classList.add("active");
+
+				currentActive = currentSlide;
+
+				clearTimeout(testimTimer);
+				testimTimer = setTimeout(function () {
+					playSlide(currentSlide += 1);
+				}, testimSpeed)
+			}
+
+			testimLeftArrow.addEventListener("click", function () {
+				playSlide(currentSlide -= 1);
+			})
+
+			testimRightArrow.addEventListener("click", function () {
+				playSlide(currentSlide += 1);
+			})
+
+			for (var l = 0; l < testimDots.length; l++) {
+				testimDots[l].addEventListener("click", function () {
+					playSlide(currentSlide = testimDots.indexOf(this));
+				})
+			}
+
+			playSlide(currentSlide);
+
+			// keyboard shortcuts
+			document.addEventListener("keyup", function (e) {
+				switch (e.keyCode) {
+					case 37:
+						testimLeftArrow.click();
+						break;
+
+					case 39:
+						testimRightArrow.click();
+						break;
+
+					case 39:
+						testimRightArrow.click();
+						break;
+
+					default:
+						break;
+				}
+			})
+
+			testim.addEventListener("touchstart", function (e) {
+				touchStartPos = e.changedTouches[0].clientX;
+			})
+
+			testim.addEventListener("touchend", function (e) {
+				touchEndPos = e.changedTouches[0].clientX;
+
+				touchPosDiff = touchStartPos - touchEndPos;
+
+				console.log(touchPosDiff);
+				console.log(touchStartPos);
+				console.log(touchEndPos);
+
+
+				if (touchPosDiff > 0 + ignoreTouch) {
+					testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+					testimRightArrow.click();
+				} else {
+					return;
+				}
+
+			})
+		}
+	</script>
 	<script type='text/javascript' src='https://kriyawp.wpengine.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0'
 		id='jquery-core-js'></script>
 	<script type='text/javascript'
@@ -1398,17 +2256,135 @@
 		</style>
 	</noscript>
 	<style>
-		#header::before{
+		#header::before {
 			background-color: #b16994;
 		}
-		.footer-copyright::before{
+
+		.footer-copyright::before {
 			background-color: #b16994;
+		}
+
+		.text {
+			color: white;
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			white-space: nowrap;
+		}
+
+		@charset "UTF-8";
+
+		.svg-inline--fa {
+			vertical-align: -0.200em;
+		}
+
+		.rounded-social-buttons {
+			text-align: center;
+		}
+
+		.rounded-social-buttons .social-button {
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			width: 3.125rem;
+			height: 3.125rem;
+			border: 0.125rem solid transparent;
+			padding: 0;
+			text-decoration: none;
+			text-align: center;
+			color: #fefefe;
+			font-size: 1.5625rem;
+			font-weight: normal;
+			line-height: 2em;
+			border-radius: 1.6875rem;
+			transition: all 0.5s ease;
+			margin-right: 0.25rem;
+			margin-bottom: 0.25rem;
+		}
+
+		.rounded-social-buttons .social-button:hover,
+		.rounded-social-buttons .social-button:focus {
+			-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+
+		.rounded-social-buttons .fa-twitter,
+		.fa-facebook-f,
+		.fa-linkedin,
+		.fa-youtube,
+		.fa-instagram {
+			font-size: 25px;
+		}
+
+		.rounded-social-buttons .social-button.facebook {
+			background: #3b5998;
+		}
+
+		.rounded-social-buttons .social-button.facebook:hover,
+		.rounded-social-buttons .social-button.facebook:focus {
+			color: #3b5998;
+			background: #fefefe;
+			border-color: #3b5998;
+		}
+
+		.rounded-social-buttons .social-button.twitter {
+			background: #55acee;
+		}
+
+		.rounded-social-buttons .social-button.twitter:hover,
+		.rounded-social-buttons .social-button.twitter:focus {
+			color: #55acee;
+			background: #fefefe;
+			border-color: #55acee;
+		}
+
+		.rounded-social-buttons .social-button.linkedin {
+			background: #007bb5;
+		}
+
+		.rounded-social-buttons .social-button.linkedin:hover,
+		.rounded-social-buttons .social-button.linkedin:focus {
+			color: #007bb5;
+			background: #fefefe;
+			border-color: #007bb5;
+		}
+
+		.rounded-social-buttons .social-button.youtube {
+			background: #bb0000;
+		}
+
+		.rounded-social-buttons .social-button.youtube:hover,
+		.rounded-social-buttons .social-button.youtube:focus {
+			color: #bb0000;
+			background: #fefefe;
+			border-color: #bb0000;
+		}
+
+		.rounded-social-buttons .social-button.instagram {
+			background: #125688;
+		}
+
+		.rounded-social-buttons .social-button.instagram:hover,
+		.rounded-social-buttons .social-button.instagram:focus {
+			color: #125688;
+			background: #fefefe;
+			border-color: #125688;
+		}
+	</style>
+	<style>
+		.navbar {
+			display: block;
 		}
 	</style>
 </head>
 
 <body
-	class="home page-template-default page page-id-433 wp-embed-responsive theme-kriya woocommerce-no-js tribe-no-js layout-wide split-header boxed-header page-with-slider wpb-js-composer js-comp-ver-6.5.0 vc_responsive" style="background-color: #f2e9d2;">
+	class="home page-template-default page page-id-433 wp-embed-responsive theme-kriya woocommerce-no-js tribe-no-js layout-wide split-header boxed-header page-with-slider wpb-js-composer js-comp-ver-6.5.0 vc_responsive"
+	style="background-color: #f2e9d2;">
 	<!-- <div class="loader">
 		<div class="loader-inner">
 			<div></div>
@@ -1420,727 +2396,445 @@
 		<div class="inner-wrapper">
 
 			<!-- ** Header Wrapper ** -->
-			<div id="header-wrapper">
+			<nav class="navbar navbar-dark navbar-expand-sm fixed-top"
+				style="background-image: url(wp-content/themes/kriya/images/pattern-chakras-white.png); background-color: #ae6d93;">
+				<div class="container" style="width: auto;">
+					<a href="/" class="navbar-brand">
+						<img id="logo" src="logo.png" style="width: 220px;">
+					</a>
 
-				<!-- ** Header ** -->
-				<header id="header">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+						style="margin-top: 0px;">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-					<!-- ** Main Header Wrapper ** --> 
-					<div id="main-header-wrapper" class="main-header-wrapper" style="height: 100px;" >
-						<div class="container">
 
-							<!-- ** Main Header ** -->
-							<div class="main-header">
+					<div id="navbarCollapse" class="collapse navbar-collapse">
+						<ul class="navbar-nav ml-auto" style="font-family: overlock;font-weight: bold;">
+							<li class="nav-item mr-3">
+								<a href="" class="nav-link active">
+									Home
+								</a>
+							</li>
+							<li class="nav-item mr-3">
+								<a href="" class="nav-link active">
+									Gallery
+								</a>
+							</li>
+							<li class="nav-item mr-3">
+								<a href="" class="nav-link active">
+									Shop
+								</a>
+							</li>
+							<li class="nav-item mr-3">
+								<a href="" class="nav-link active">
+									Blog
+								</a>
+							</li>
+							<li class="nav-item mr-3">
+								<a href="" class="nav-link active">
+									Book Now
+								</a>
+							</li>
+							<li class="nav-item mr-3">
+								<a href="" class="nav-link active">
+									About Us
+								</a>
+							</li>
+						</ul>
+					</div>
+			</nav>
 
-								<!-- Logo -->
-								<div id="logo" style="width: 25%;"> <a href="index.html">
-										<img class="normal_logo"
-											src="logo.png"/>
-									</a> </div><!-- Logo - End -->
+		</div>
+		<!-- ** Header Wrapper ** -->
 
-								<!-- Menu -->
-								<div class="menu-wrapper">
-									<div class="dt-menu-toggle" id="dt-menu-toggle">
-										Menu <span class="dt-menu-toggle-icon"></span>
-									</div>
-									<nav id="main-menu">
-										<ul id="menu-left-menu" class="menu menu-left">
-											
-										</ul>
-										<ul id="menu-right-menu" class="menu menu-right">
-											<li id="menu-item-654"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-433 current_page_item menu-item-depth-0 with-box-shadow  menu-links-with-border  menu-links-with-arrow  single  menu-item-simple-parent ">
-												<a href="index.html">Home</a></li>
-											
-											<li id="menu-item-5776"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 with-box-shadow  menu-title-with-bg  menu-links-with-border  menu-links-with-arrow  single  menu-item-megamenu-parent  megamenu-3-columns-group">
-												<a href=".vc_custom_1467034297497">Gallery</a>
-												<div class='megamenu-child-container '>
 
-													<!-- <ul class="sub-menu ">
-														<li id="menu-item-5764"
-															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-1">
-															<span class="nolink-menu">Blog I Column</span>
-															<ul class="sub-menu ">
-																<li id="menu-item-5773"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/blog/blog-i-col/">Without
-																		Sidebar</a></li>
-																<li id="menu-item-5765"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/blog/blog-i-col/blog-i-col-with-lhs/">With
-																		Left Sidebar</a></li>
-																<li id="menu-item-5766"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/blog/blog-i-col/blog-i-col-with-rhs/">With
-																		Right Sidebar</a></li>
-															</ul>
-															<a class="dt-menu-expand" href="#">+</a>
-														</li>
-														<li id="menu-item-5767"
-															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-1">
-															<span class="nolink-menu">Blog II Column</span>
-															<ul class="sub-menu ">
-																<li id="menu-item-5774"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/blog/blog-ii-col/">Without
-																		Sidebar</a></li>
-																<li id="menu-item-5768"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/blog/blog-ii-col/blog-ii-col-with-lhs/">With
-																		Left Sidebar</a></li>
-																<li id="menu-item-5769"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/blog/blog-ii-col/blog-ii-col-with-rhs/">With
-																		Right Sidebar</a></li>
-															</ul>
-															<a class="dt-menu-expand" href="#">+</a>
-														</li>
-														<li id="menu-item-5770"
-															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-1">
-															<span class="nolink-menu">Blog III Column</span>
-															<ul class="sub-menu ">
-																<li id="menu-item-5775"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/blog/blog-iii-col/">Without
-																		Sidebar</a></li>
-																<li id="menu-item-5771"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/blog/blog-iii-col/blog-iii-col-with-lhs/">With
-																		Left Sidebar</a></li>
-																<li id="menu-item-5772"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/blog/blog-iii-col/blog-iii-col-with-rhs/">With
-																		Right Sidebar</a></li>
-															</ul>
-															<a class="dt-menu-expand" href="#">+</a>
-														</li>
-													</ul> -->
-													<a class="dt-menu-expand" href="#">+</a>
+
+		<!-- ** Main ** -->
+		<div id="main">
+			<div class="banner">
+				<picture>
+					<!-- Default image for larger screens -->
+					<source media="(min-width: 426px)" srcset="banner.png">
+					<!-- Image for screens 425px or less -->
+					<img src="1.png" alt="Banner Image" style="margin-top: 74px;">
+					<img src="2.png" alt="Banner Image">
+				  </picture>
+			</div>
+			<div class="container">
+				<section id="primary" class="content-full-width">
+					<div id="post-433" class="post-433 page type-page status-publish hentry">
+
+
+						<!-- Pick your yoga pack section -->
+						<div class="vc_row-full-width vc_clearfix"></div>
+						<div data-vc-full-width="true" data-vc-full-width-init="false"
+							class="vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_custom_1465651361165 vc_row-has-fill">
+							<div class="wpb_column vc_column_container vc_col-sm-12">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<h2 style="text-align: center; "
+											class="vc_custom_heading vc_custom_1465715640653">Our Products</h2>
+										<div
+											class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_40 vc_sep_stitch-dashed vc_sep_pos_align_center ico-size-small">
+											<span class="vc_sep_holder vc_sep_holder_l"><span
+													style="border-color:#a58251;" class="vc_sep_line"></span></span>
+											<div class="vc_icon_element vc_icon_element-outer vc_icon_element-img">
+												<div class="vc_icon_element-inner"><span
+														class="vc_icon_element-icon"><img width="60" height="60"
+															src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-master.png"
+															class="vc_text_separator-img attachment-full"
+															alt="ico-master" decoding="async" loading="lazy" /></span>
 												</div>
-												<a class="dt-menu-expand" href="#">+</a>
-											</li>
-											<li id="menu-item-5777"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-0 with-box-shadow  menu-title-with-bg  menu-links-with-border  menu-links-with-arrow  single  menu-item-megamenu-parent  megamenu-3-columns-group">
-												<a href="#">Shop</a>
-												<div class='megamenu-child-container '>
+											</div><span class="vc_sep_holder vc_sep_holder_r"><span
+													style="border-color:#a58251;" class="vc_sep_line"></span></span>
+										</div>
+										<div class="wpb_text_column wpb_content_element  vc_custom_1465454356972">
+											<div class="wpb_wrapper">
+												<p style="text-align: center;">Delve into our handpicked assortment of
+													products, designed to support your spiritual awakening and growth.
+												</p>
 
-													<!-- <ul class="sub-menu ">
-														<li id="menu-item-5778"
-															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-1">
-															<span class="nolink-menu">Gallery II Column</span>
-															<ul class="sub-menu ">
-																<li id="menu-item-5787"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/gallery/gallery-ii-col/">Without
-																		Sidebar</a></li>
-																<li id="menu-item-5779"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/gallery/gallery-ii-col/gallery-ii-col-with-lhs/">With
-																		Left Sidebar</a></li>
-																<li id="menu-item-5780"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/gallery/gallery-ii-col/gallery-ii-col-with-rhs/">With
-																		Right Sidebar</a></li>
-															</ul>
-															<a class="dt-menu-expand" href="#">+</a>
-														</li>
-														<li id="menu-item-5781"
-															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-1">
-															<span class="nolink-menu">Gallery III Column</span>
-															<ul class="sub-menu ">
-																<li id="menu-item-5788"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/gallery/gallery-iii-col/">Without
-																		Sidebar</a></li>
-																<li id="menu-item-5782"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/gallery/gallery-iii-col/gallery-iii-col-with-lhs/">With
-																		Left Sidebar</a></li>
-																<li id="menu-item-5783"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/gallery/gallery-iii-col/gallery-iii-col-with-rhs/">With
-																		Right Sidebar</a></li>
-															</ul>
-															<a class="dt-menu-expand" href="#">+</a>
-														</li>
-														<li id="menu-item-5784"
-															class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-depth-1">
-															<span class="nolink-menu">Gallery IV Column</span>
-															<ul class="sub-menu ">
-																<li id="menu-item-5789"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/gallery/gallery-iv-col/">Without
-																		Sidebar</a></li>
-																<li id="menu-item-5785"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/gallery/gallery-iv-col/gallery-iv-col-with-lhs/">With
-																		Left Sidebar</a></li>
-																<li id="menu-item-5786"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/gallery/gallery-iv-col/gallery-iv-col-with-rhs/">With
-																		Right Sidebar</a></li>
-															</ul>
-															<a class="dt-menu-expand" href="#">+</a>
-														</li>
-													</ul> -->
-													<a class="dt-menu-expand" href="#">+</a>
-												</div>
-												<a class="dt-menu-expand" href="#">+</a>
-											</li>
-											<li id="menu-item-5820"
-												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-depth-0 with-box-shadow  menu-links-with-border  menu-links-with-arrow  single  menu-item-simple-parent ">
-												<a href="#">Blog</a>
-
-												<!-- <ul class="sub-menu ">
-													<li id="menu-item-5823"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1">
-														<a href="https://kriyawp.wpengine.com/events/list">Events
-															List</a></li>
-													<li id="menu-item-5821"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1">
-														<a href="https://kriyawp.wpengine.com/events">Events Month</a>
-													</li>
-													<li id="menu-item-5822"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1">
-														<a href="https://kriyawp.wpengine.com/events/week">Events
-															Week</a></li>
-													<li id="menu-item-5824"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1">
-														<a href="https://kriyawp.wpengine.com/events/2016-12-24/">Events
-															Day</a></li>
-													<li id="menu-item-5825"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1">
-														<a href="https://kriyawp.wpengine.com/events/map">Events Map</a>
-													</li>
-													<li id="menu-item-5826"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1">
-														<a href="https://kriyawp.wpengine.com/events/photo">Events
-															Photo</a></li>
-													<li id="menu-item-5827"
-														class="menu-item menu-item-type-custom menu-item-object-custom menu-item-depth-1">
-														<a
-															href="https://kriyawp.wpengine.com/event/its-selfie-time-for-our-young-trainees">Event
-															Detail</a></li>
-												</ul> -->
-												<a class="dt-menu-expand" href="#">+</a>
-											</li>
-											<li id="menu-item-5836"
-												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-depth-0 with-box-shadow  menu-title-with-bg  menu-links-with-border  menu-links-with-arrow  single  menu-item-megamenu-parent  megamenu-3-columns-group">
-												<a
-													href="#">Book Now</a>
-												<div class='megamenu-child-container '>
-
-													<!-- <ul class="sub-menu ">
-														<li id="menu-item-758"
-															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-depth-1">
-															<span class="nolink-menu">Shortcodes I</span>
-															<ul class="sub-menu ">
-																<li id="menu-item-5203"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/typography/">Typography</a>
-																</li>
-																<li id="menu-item-752"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/buttons/">Buttons</a>
-																</li>
-																<li id="menu-item-753"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/columns/">Columns</a>
-																</li>
-																<li id="menu-item-757"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/tabs-toggles/">Tabs
-																		&#038; Toggles</a></li>
-															</ul>
-															<a class="dt-menu-expand" href="#">+</a>
-														</li>
-														<li id="menu-item-759"
-															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-depth-1">
-															<span class="nolink-menu">Shortcodes II</span>
-															<ul class="sub-menu ">
-																<li id="menu-item-755"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/message-boxes/">Message
-																		Boxes</a></li>
-																<li id="menu-item-5202"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/icon-boxes/">Icon
-																		Boxes</a></li>
-																<li id="menu-item-5201"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/pricing-tables/">Pricing
-																		Tables</a></li>
-																<li id="menu-item-756"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/progress-bars/">Progress
-																		Bars</a></li>
-															</ul>
-															<a class="dt-menu-expand" href="#">+</a>
-														</li>
-														<li id="menu-item-5205"
-															class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-depth-1">
-															<span class="nolink-menu">Shortcodes III</span>
-															<ul class="sub-menu ">
-																<li id="menu-item-5206"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/number-counter/">Number
-																		Counter</a></li>
-																<li id="menu-item-5204"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/timeline/">Timeline</a>
-																</li>
-																<li id="menu-item-5199"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/carousels/">Carousels</a>
-																</li>
-																<li id="menu-item-5200"
-																	class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-2">
-																	<a
-																		href="https://kriyawp.wpengine.com/shortcodes/miscellaneous/">Miscellaneous</a>
-																</li>
-															</ul>
-															<a class="dt-menu-expand" href="#">+</a>
-														</li>
-													</ul> -->
-													<a class="dt-menu-expand" href="#">+</a>
-												</div>
-												<a class="dt-menu-expand" href="#">+</a>
-											</li>
-											<li id="menu-item-5798"
-												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-depth-0 with-box-shadow  menu-links-with-border  menu-links-with-arrow  single  menu-item-simple-parent ">
-												<a href="#aboutus">About Us</a></li>
-										</ul>
-									</nav>
-								</div><!-- Menu -->
-							</div><!-- ** Main Header - End ** -->
-						</div>
-					</div><!-- ** Main Header Wrapper - End ** -->
-
-				
-				</header><!-- ** Header - End ** -->
-			</div><!-- ** Header Wrapper ** -->
-
-
-
-			<!-- ** Main ** -->
-			<div id="main">
-				<div class="banner">
-					<img src="banner.png" alt="">
-				</div>
-				<div class="container">
-					<section id="primary" class="content-full-width">
-						<div id="post-433" class="post-433 page type-page status-publish hentry">
-							
-
-							<!-- Pick your yoga pack section -->
-							<div class="vc_row-full-width vc_clearfix"></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false"
-								class="vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_custom_1465651361165 vc_row-has-fill">
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<h2 style="text-align: center; "
-												class="vc_custom_heading vc_custom_1465715640653">Our Products</h2>
-											<div
-												class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_40 vc_sep_stitch-dashed vc_sep_pos_align_center ico-size-small">
-												<span class="vc_sep_holder vc_sep_holder_l"><span
-														style="border-color:#a58251;" class="vc_sep_line"></span></span>
-												<div class="vc_icon_element vc_icon_element-outer vc_icon_element-img">
-													<div class="vc_icon_element-inner"><span
-															class="vc_icon_element-icon"><img width="60" height="60"
-																src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-master.png"
-																class="vc_text_separator-img attachment-full"
-																alt="ico-master" decoding="async"
-																loading="lazy" /></span></div>
-												</div><span class="vc_sep_holder vc_sep_holder_r"><span
-														style="border-color:#a58251;" class="vc_sep_line"></span></span>
 											</div>
-											<div class="wpb_text_column wpb_content_element  vc_custom_1465454356972">
-												<div class="wpb_wrapper">
-													<p style="text-align: center;">Delve into our handpicked assortment of products, designed to support your spiritual awakening and growth.</p>
-
-												</div>
-											</div>
-											<div class="vc_empty_space" style="height: 64px"><span
-													class="vc_empty_space_inner"></span></div>
-											<div class="woocommerce columns-4 ">
-												<ul class="products columns-4">
-													<li
-														class="pif-has-gallery product type-product post-31 status-publish first instock product_cat-clothing product_cat-t-shirts product_tag-covering product_tag-teez has-post-thumbnail featured taxable shipping-taxable purchasable product-type-simple">
-														<div
-															class=' dt-sc-one-fourth column  featured-product  in-stock-product '>
-															<div class='product-wrapper'><a
-																	href="#"
-																	class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-																	<div class="featured-tag">
-																		<div><i
-																				class="fa fa-thumb-tack"></i><span>Featured</span>
-																		</div>
-																	</div>
-																	<h2 class="woocommerce-loop-product__title">Black
-																		Vase Decor</h2>
-																</a>
-																<div class='product-thumb'><a class="image"
-																		href="#"
-																		title="Black Vase Decor"><img width="300"
-																			height="300"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-300x300.jpg"
-																			class="attachment-shop_catalog size-shop_catalog wp-post-image"
-																			alt="black vase decor" decoding="async"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-600x600.jpg 600w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor.jpg 1500w"
-																			sizes="(max-width: 300px) 100vw, 300px" /><img
-																			width="1500" height="1500"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase.jpg"
-																			class="secondary-image attachment-shop-catalog"
-																			alt="yoga black vase" decoding="async"
-																			loading="lazy"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase.jpg 1500w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-600x600.jpg 600w"
-																			sizes="(max-width: 1500px) 100vw, 1500px" /></a><a
-																		href="#"
-																		data-quantity="1"
-																		class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
-																		data-product_id="31" data-product_sku=""
-																		aria-label="Add &ldquo;Black Vase Decor&rdquo; to your cart"
-																		rel="nofollow">Add to cart</a>
-																	<div class="yith-wcwl-add-to-wishlist add-to-wishlist-31  wishlist-fragment on-first-load"
-																		data-fragment-ref="31"
-																		data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:31,&quot;parent_product_id&quot;:31,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
-
-																		<!-- ADD TO WISHLIST -->
-
-																		<div class="yith-wcwl-add-button">
-																			<a href="https://kriyawp.wpengine.com/?add_to_wishlist=31"
-																				rel="nofollow" data-product-id="31"
-																				data-product-type="simple"
-																				data-original-product-id="31"
-																				class="add_to_wishlist single_add_to_wishlist"
-																				data-title="Add to Wishlist">
-																				<span>Add to Wishlist</span>
-																			</a>
-																		</div>
-																		<!-- COUNT TEXT -->
-
-																	</div><a class="product-content"
-																		href="#"
-																		title="Black Vase Decor"> </a>
-																</div>
-																<div class='product-details'>
-																	<h5><a
-																			href="#">Black
-																			Vase Decor</a></h5><span
-																		class="product-price">
-																		<span class="price"><span
-																				class="woocommerce-Price-amount amount"><bdi><span
-																						class="woocommerce-Price-currencySymbol">&pound;</span>20.00</bdi></span></span>
-																	</span>
-																	<div class="product-rating-wrapper">
-																		<div class="star-rating" role="img"
-																			aria-label="Rated 5.00 out of 5"><span
-																				style="width:100%">Rated <strong
-																					class="rating">5.00</strong> out of
-																				5</span></div>
-																		<div></div>
+										</div>
+										<div class="vc_empty_space" style="height: 64px"><span
+												class="vc_empty_space_inner"></span></div>
+										<div class="woocommerce columns-4 ">
+											<ul class="products columns-4">
+												<li
+													class="pif-has-gallery product type-product post-31 status-publish first instock product_cat-clothing product_cat-t-shirts product_tag-covering product_tag-teez has-post-thumbnail featured taxable shipping-taxable purchasable product-type-simple">
+													<div
+														class=' dt-sc-one-fourth column  featured-product  in-stock-product '>
+														<div class='product-wrapper'><a href="#"
+																class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+																<div class="featured-tag">
+																	<div><i
+																			class="fa fa-thumb-tack"></i><span>Featured</span>
 																	</div>
 																</div>
-													</li>
-													<li
-														class="pif-has-gallery product type-product post-34 status-publish instock product_cat-clothing product_cat-t-shirts product_tag-covering product_tag-teez has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
-														<div class=' dt-sc-one-fourth column  in-stock-product '>
-															<div class='product-wrapper'><a
-																	href="#"
-																	class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-																	<h2 class="woocommerce-loop-product__title">Cinnamon
-																		Extract</h2>
-																</a>
-																<div class='product-thumb'><a class="image"
-																		href="#"
-																		title="Cinnamon Extract For Massage"><img
-																			width="300" height="300"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-300x300.jpg"
-																			class="attachment-shop_catalog size-shop_catalog wp-post-image"
-																			alt="cinnamon extract for massage"
-																			decoding="async"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-600x600.jpg 600w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage.jpg 1500w"
-																			sizes="(max-width: 300px) 100vw, 300px" /><img
-																			width="1500" height="1500"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo.jpg"
-																			class="secondary-image attachment-shop-catalog"
-																			alt="wicker basket combo" decoding="async"
-																			loading="lazy"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo.jpg 1500w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-600x600.jpg 600w"
-																			sizes="(max-width: 1500px) 100vw, 1500px" /></a><a
-																		href="https://kriyawp.wpengine.com/?add-to-cart=34"
-																		data-quantity="1"
-																		class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
-																		data-product_id="34" data-product_sku=""
-																		aria-label="Add &ldquo;Cinnamon Extract For Massage&rdquo; to your cart"
-																		rel="nofollow">Add to cart</a>
-																	<div class="yith-wcwl-add-to-wishlist add-to-wishlist-34  wishlist-fragment on-first-load"
-																		data-fragment-ref="34"
-																		data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:34,&quot;parent_product_id&quot;:34,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+																<h2 class="woocommerce-loop-product__title">Black
+																	Vase Decor</h2>
+															</a>
+															<div class='product-thumb'><a class="image" href="#"
+																	title="Black Vase Decor"><img width="300"
+																		height="300"
+																		src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-300x300.jpg"
+																		class="attachment-shop_catalog size-shop_catalog wp-post-image"
+																		alt="black vase decor" decoding="async"
+																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor-600x600.jpg 600w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/black-vase-decor.jpg 1500w"
+																		sizes="(max-width: 300px) 100vw, 300px" /><img
+																		width="1500" height="1500"
+																		src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase.jpg"
+																		class="secondary-image attachment-shop-catalog"
+																		alt="yoga black vase" decoding="async"
+																		loading="lazy"
+																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase.jpg 1500w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/yoga-black-vase-600x600.jpg 600w"
+																		sizes="(max-width: 1500px) 100vw, 1500px" /></a><a
+																	href="#" data-quantity="1"
+																	class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
+																	data-product_id="31" data-product_sku=""
+																	aria-label="Add &ldquo;Black Vase Decor&rdquo; to your cart"
+																	rel="nofollow">Add to cart</a>
+																<div class="yith-wcwl-add-to-wishlist add-to-wishlist-31  wishlist-fragment on-first-load"
+																	data-fragment-ref="31"
+																	data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:31,&quot;parent_product_id&quot;:31,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
 
-																		<!-- ADD TO WISHLIST -->
+																	<!-- ADD TO WISHLIST -->
 
-																		<div class="yith-wcwl-add-button">
-																			<a href="https://kriyawp.wpengine.com/?add_to_wishlist=34"
-																				rel="nofollow" data-product-id="34"
-																				data-product-type="simple"
-																				data-original-product-id="34"
-																				class="add_to_wishlist single_add_to_wishlist"
-																				data-title="Add to Wishlist">
-																				<span>Add to Wishlist</span>
-																			</a>
-																		</div>
-																		<!-- COUNT TEXT -->
-
-																	</div><a class="product-content"
-																		href="#"
-																		title="Cinnamon Extract For Massage"> </a>
-																</div>
-																<div class='product-details'>
-																	<h5><a
-																			href="#">Cinnamon
-																			Extract</a></h5><span
-																		class="product-price">
-																		<span class="price"><span
-																				class="woocommerce-Price-amount amount"><bdi><span
-																						class="woocommerce-Price-currencySymbol">&pound;</span>20.00</bdi></span></span>
-																	</span>
-																	<div class="product-rating-wrapper">
-																		<div></div>
+																	<div class="yith-wcwl-add-button">
+																		<a href="https://kriyawp.wpengine.com/?add_to_wishlist=31"
+																			rel="nofollow" data-product-id="31"
+																			data-product-type="simple"
+																			data-original-product-id="31"
+																			class="add_to_wishlist single_add_to_wishlist"
+																			data-title="Add to Wishlist">
+																			<span>Add to Wishlist</span>
+																		</a>
 																	</div>
+																	<!-- COUNT TEXT -->
+
+																</div><a class="product-content" href="#"
+																	title="Black Vase Decor"> </a>
+															</div>
+															<div class='product-details'>
+																<h5><a href="#">Black
+																		Vase Decor</a></h5><span class="product-price">
+																	<span class="price"><span
+																			class="woocommerce-Price-amount amount"><bdi><span
+																					class="woocommerce-Price-currencySymbol">&pound;</span>20.00</bdi></span></span>
+																</span>
+																<div class="product-rating-wrapper">
+																	<div class="star-rating" role="img"
+																		aria-label="Rated 5.00 out of 5"><span
+																			style="width:100%">Rated <strong
+																				class="rating">5.00</strong> out of
+																			5</span></div>
+																	<div></div>
 																</div>
-													</li>
-													<li
-														class="pif-has-gallery product type-product post-37 status-publish instock product_cat-clothing product_cat-t-shirts product_tag-covering product_tag-teez has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
-														<div class=' dt-sc-one-fourth column  in-stock-product '>
-															<div class='product-wrapper'><a
-																	href="#"
-																	class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
-																	<h2 class="woocommerce-loop-product__title">Cloth
-																		Crafted Bag</h2>
-																</a>
-																<div class='product-thumb'><a class="image"
-																		href="#"
-																		title="Cloth Crafted Bag"><img width="300"
-																			height="300"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-300x300.jpg"
-																			class="attachment-shop_catalog size-shop_catalog wp-post-image"
-																			alt="cloth crafted bag" decoding="async"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-600x600.jpg 600w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag.jpg 1500w"
-																			sizes="(max-width: 300px) 100vw, 300px" /><img
-																			width="1500" height="1500"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack.jpg"
-																			class="secondary-image attachment-shop-catalog"
-																			alt="sponge and clove pack" decoding="async"
-																			loading="lazy"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack.jpg 1500w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-600x600.jpg 600w"
-																			sizes="(max-width: 1500px) 100vw, 1500px" /></a><a
-																		href="https://kriyawp.wpengine.com/?add-to-cart=37"
-																		data-quantity="1"
-																		class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
-																		data-product_id="37" data-product_sku=""
-																		aria-label="Add &ldquo;Cloth Crafted Bag&rdquo; to your cart"
-																		rel="nofollow">Add to cart</a>
-																	<div class="yith-wcwl-add-to-wishlist add-to-wishlist-37  wishlist-fragment on-first-load"
-																		data-fragment-ref="37"
-																		data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:37,&quot;parent_product_id&quot;:37,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+															</div>
+												</li>
+												<li
+													class="pif-has-gallery product type-product post-34 status-publish instock product_cat-clothing product_cat-t-shirts product_tag-covering product_tag-teez has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+													<div class=' dt-sc-one-fourth column  in-stock-product '>
+														<div class='product-wrapper'><a href="#"
+																class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+																<h2 class="woocommerce-loop-product__title">Cinnamon
+																	Extract</h2>
+															</a>
+															<div class='product-thumb'><a class="image" href="#"
+																	title="Cinnamon Extract For Massage"><img
+																		width="300" height="300"
+																		src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-300x300.jpg"
+																		class="attachment-shop_catalog size-shop_catalog wp-post-image"
+																		alt="cinnamon extract for massage"
+																		decoding="async"
+																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage-600x600.jpg 600w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cinnamon-extract-for-massage.jpg 1500w"
+																		sizes="(max-width: 300px) 100vw, 300px" /><img
+																		width="1500" height="1500"
+																		src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo.jpg"
+																		class="secondary-image attachment-shop-catalog"
+																		alt="wicker basket combo" decoding="async"
+																		loading="lazy"
+																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo.jpg 1500w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/wicker-basket-combo-600x600.jpg 600w"
+																		sizes="(max-width: 1500px) 100vw, 1500px" /></a><a
+																	href="https://kriyawp.wpengine.com/?add-to-cart=34"
+																	data-quantity="1"
+																	class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
+																	data-product_id="34" data-product_sku=""
+																	aria-label="Add &ldquo;Cinnamon Extract For Massage&rdquo; to your cart"
+																	rel="nofollow">Add to cart</a>
+																<div class="yith-wcwl-add-to-wishlist add-to-wishlist-34  wishlist-fragment on-first-load"
+																	data-fragment-ref="34"
+																	data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:34,&quot;parent_product_id&quot;:34,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
 
-																		<!-- ADD TO WISHLIST -->
+																	<!-- ADD TO WISHLIST -->
 
-																		<div class="yith-wcwl-add-button">
-																			<a href="https://kriyawp.wpengine.com/?add_to_wishlist=37"
-																				rel="nofollow" data-product-id="37"
-																				data-product-type="simple"
-																				data-original-product-id="37"
-																				class="add_to_wishlist single_add_to_wishlist"
-																				data-title="Add to Wishlist">
-																				<span>Add to Wishlist</span>
-																			</a>
-																		</div>
-																		<!-- COUNT TEXT -->
-
-																	</div><a class="product-content"
-																		href="#"
-																		title="Cloth Crafted Bag"> </a>
-																</div>
-																<div class='product-details'>
-																	<h5><a
-																			href="#">Cloth
-																			Crafted Bag</a></h5><span
-																		class="product-price">
-																		<span class="price"><span
-																				class="woocommerce-Price-amount amount"><bdi><span
-																						class="woocommerce-Price-currencySymbol">&pound;</span>18.00</bdi></span></span>
-																	</span>
-																	<div class="product-rating-wrapper">
-																		<div class="star-rating" role="img"
-																			aria-label="Rated 5.00 out of 5"><span
-																				style="width:100%">Rated <strong
-																					class="rating">5.00</strong> out of
-																				5</span></div>
-																		<div></div>
+																	<div class="yith-wcwl-add-button">
+																		<a href="https://kriyawp.wpengine.com/?add_to_wishlist=34"
+																			rel="nofollow" data-product-id="34"
+																			data-product-type="simple"
+																			data-original-product-id="34"
+																			class="add_to_wishlist single_add_to_wishlist"
+																			data-title="Add to Wishlist">
+																			<span>Add to Wishlist</span>
+																		</a>
 																	</div>
+																	<!-- COUNT TEXT -->
+
+																</div><a class="product-content" href="#"
+																	title="Cinnamon Extract For Massage"> </a>
+															</div>
+															<div class='product-details'>
+																<h5><a href="#">Cinnamon
+																		Extract</a></h5><span class="product-price">
+																	<span class="price"><span
+																			class="woocommerce-Price-amount amount"><bdi><span
+																					class="woocommerce-Price-currencySymbol">&pound;</span>20.00</bdi></span></span>
+																</span>
+																<div class="product-rating-wrapper">
+																	<div></div>
 																</div>
-													</li>
-													<li
-														class="pif-has-gallery product type-product post-40 status-publish last outofstock product_cat-clothing product_cat-hoodies product_tag-covering product_tag-jackets has-post-thumbnail taxable shipping-taxable product-type-variable has-default-attributes">
-														<div class=' dt-sc-one-fourth column  out-of-stock-product '>
-															<div class='product-wrapper'><a
-																	href="#"
-																	class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><span
-																		class="out-of-stock"><span>Out of
-																			Stock</span></span>
-																	<h2 class="woocommerce-loop-product__title">Green
-																		Wood Basket</h2>
-																</a>
-																<div class='product-thumb'><a class="image"
-																		href="#"
-																		title="Green Wood Basket"><img width="300"
-																			height="300"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-300x300.jpg"
-																			class="attachment-shop_catalog size-shop_catalog wp-post-image"
-																			alt="green wood basket" decoding="async"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-600x600.jpg 600w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket.jpg 1500w"
-																			sizes="(max-width: 300px) 100vw, 300px" /><img
-																			width="1500" height="1500"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack.jpg"
-																			class="secondary-image attachment-shop-catalog"
-																			alt="seddle combo pack" decoding="async"
-																			loading="lazy"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack.jpg 1500w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-600x600.jpg 600w"
-																			sizes="(max-width: 1500px) 100vw, 1500px" /></a><a
-																		href="#"
-																		data-quantity="1"
-																		class="dt-sc-button too-small button product_type_variable"
-																		data-product_id="40" data-product_sku=""
-																		aria-label="Select options for &ldquo;Green Wood Basket&rdquo;"
-																		rel="nofollow">Read more</a>
-																	<div class="yith-wcwl-add-to-wishlist add-to-wishlist-40  wishlist-fragment on-first-load"
-																		data-fragment-ref="40"
-																		data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:40,&quot;parent_product_id&quot;:40,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+															</div>
+												</li>
+												<li
+													class="pif-has-gallery product type-product post-37 status-publish instock product_cat-clothing product_cat-t-shirts product_tag-covering product_tag-teez has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+													<div class=' dt-sc-one-fourth column  in-stock-product '>
+														<div class='product-wrapper'><a href="#"
+																class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+																<h2 class="woocommerce-loop-product__title">Cloth
+																	Crafted Bag</h2>
+															</a>
+															<div class='product-thumb'><a class="image" href="#"
+																	title="Cloth Crafted Bag"><img width="300"
+																		height="300"
+																		src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-300x300.jpg"
+																		class="attachment-shop_catalog size-shop_catalog wp-post-image"
+																		alt="cloth crafted bag" decoding="async"
+																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag-600x600.jpg 600w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/cloth-crafted-bag.jpg 1500w"
+																		sizes="(max-width: 300px) 100vw, 300px" /><img
+																		width="1500" height="1500"
+																		src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack.jpg"
+																		class="secondary-image attachment-shop-catalog"
+																		alt="sponge and clove pack" decoding="async"
+																		loading="lazy"
+																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack.jpg 1500w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/sponge-and-clove-pack-600x600.jpg 600w"
+																		sizes="(max-width: 1500px) 100vw, 1500px" /></a><a
+																	href="https://kriyawp.wpengine.com/?add-to-cart=37"
+																	data-quantity="1"
+																	class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
+																	data-product_id="37" data-product_sku=""
+																	aria-label="Add &ldquo;Cloth Crafted Bag&rdquo; to your cart"
+																	rel="nofollow">Add to cart</a>
+																<div class="yith-wcwl-add-to-wishlist add-to-wishlist-37  wishlist-fragment on-first-load"
+																	data-fragment-ref="37"
+																	data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:37,&quot;parent_product_id&quot;:37,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
 
-																		<!-- ADD TO WISHLIST -->
+																	<!-- ADD TO WISHLIST -->
 
-																		<div class="yith-wcwl-add-button">
-																			<a href="https://kriyawp.wpengine.com/?add_to_wishlist=40"
-																				rel="nofollow" data-product-id="40"
-																				data-product-type="variable"
-																				data-original-product-id="40"
-																				class="add_to_wishlist single_add_to_wishlist"
-																				data-title="Add to Wishlist">
-																				<span>Add to Wishlist</span>
-																			</a>
-																		</div>
-																		<!-- COUNT TEXT -->
-
-																	</div><a class="product-content"
-																		href="#"
-																		title="Green Wood Basket"> </a>
-																</div>
-																<div class='product-details'>
-																	<h5><a
-																			href="#">Green
-																			Wood Basket</a></h5><span
-																		class="product-price">
-																	</span>
-																	<div class="product-rating-wrapper">
-																		<div class="star-rating" role="img"
-																			aria-label="Rated 4.00 out of 5"><span
-																				style="width:80%">Rated <strong
-																					class="rating">4.00</strong> out of
-																				5</span></div>
-																		<div></div>
+																	<div class="yith-wcwl-add-button">
+																		<a href="https://kriyawp.wpengine.com/?add_to_wishlist=37"
+																			rel="nofollow" data-product-id="37"
+																			data-product-type="simple"
+																			data-original-product-id="37"
+																			class="add_to_wishlist single_add_to_wishlist"
+																			data-title="Add to Wishlist">
+																			<span>Add to Wishlist</span>
+																		</a>
 																	</div>
+																	<!-- COUNT TEXT -->
+
+																</div><a class="product-content" href="#"
+																	title="Cloth Crafted Bag"> </a>
+															</div>
+															<div class='product-details'>
+																<h5><a href="#">Cloth
+																		Crafted Bag</a></h5><span class="product-price">
+																	<span class="price"><span
+																			class="woocommerce-Price-amount amount"><bdi><span
+																					class="woocommerce-Price-currencySymbol">&pound;</span>18.00</bdi></span></span>
+																</span>
+																<div class="product-rating-wrapper">
+																	<div class="star-rating" role="img"
+																		aria-label="Rated 5.00 out of 5"><span
+																			style="width:100%">Rated <strong
+																				class="rating">5.00</strong> out of
+																			5</span></div>
+																	<div></div>
 																</div>
-													</li>
-												</ul>
-											</div>
+															</div>
+												</li>
+												<li
+													class="pif-has-gallery product type-product post-40 status-publish last outofstock product_cat-clothing product_cat-hoodies product_tag-covering product_tag-jackets has-post-thumbnail taxable shipping-taxable product-type-variable has-default-attributes">
+													<div class=' dt-sc-one-fourth column  out-of-stock-product '>
+														<div class='product-wrapper'><a href="#"
+																class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><span
+																	class="out-of-stock"><span>Out of
+																		Stock</span></span>
+																<h2 class="woocommerce-loop-product__title">Green
+																	Wood Basket</h2>
+															</a>
+															<div class='product-thumb'><a class="image" href="#"
+																	title="Green Wood Basket"><img width="300"
+																		height="300"
+																		src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-300x300.jpg"
+																		class="attachment-shop_catalog size-shop_catalog wp-post-image"
+																		alt="green wood basket" decoding="async"
+																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket-600x600.jpg 600w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/green-wood-basket.jpg 1500w"
+																		sizes="(max-width: 300px) 100vw, 300px" /><img
+																		width="1500" height="1500"
+																		src="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack.jpg"
+																		class="secondary-image attachment-shop-catalog"
+																		alt="seddle combo pack" decoding="async"
+																		loading="lazy"
+																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack.jpg 1500w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-768x768.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-1024x1024.jpg 1024w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-180x180.jpg 180w, https://kriyawp.wpengine.com/wp-content/uploads/2013/06/seddle-combo-pack-600x600.jpg 600w"
+																		sizes="(max-width: 1500px) 100vw, 1500px" /></a><a
+																	href="#" data-quantity="1"
+																	class="dt-sc-button too-small button product_type_variable"
+																	data-product_id="40" data-product_sku=""
+																	aria-label="Select options for &ldquo;Green Wood Basket&rdquo;"
+																	rel="nofollow">Read more</a>
+																<div class="yith-wcwl-add-to-wishlist add-to-wishlist-40  wishlist-fragment on-first-load"
+																	data-fragment-ref="40"
+																	data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:40,&quot;parent_product_id&quot;:40,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+																	<!-- ADD TO WISHLIST -->
+
+																	<div class="yith-wcwl-add-button">
+																		<a href="https://kriyawp.wpengine.com/?add_to_wishlist=40"
+																			rel="nofollow" data-product-id="40"
+																			data-product-type="variable"
+																			data-original-product-id="40"
+																			class="add_to_wishlist single_add_to_wishlist"
+																			data-title="Add to Wishlist">
+																			<span>Add to Wishlist</span>
+																		</a>
+																	</div>
+																	<!-- COUNT TEXT -->
+
+																</div><a class="product-content" href="#"
+																	title="Green Wood Basket"> </a>
+															</div>
+															<div class='product-details'>
+																<h5><a href="#">Green
+																		Wood Basket</a></h5><span class="product-price">
+																</span>
+																<div class="product-rating-wrapper">
+																	<div class="star-rating" role="img"
+																		aria-label="Rated 4.00 out of 5"><span
+																			style="width:80%">Rated <strong
+																				class="rating">4.00</strong> out of
+																			5</span></div>
+																	<div></div>
+																</div>
+															</div>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
-								
 							</div>
-							<!-- Pick your yoga pack section -->
 
-							<!-- Your life of Healing section -->
-							<div class="vc_row-full-width vc_clearfix"></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5"
-								data-vc-parallax-image="https://kriyawp.wpengine.com/wp-content/uploads/2016/04/parallax-decor.png"
-								class="vc_row wpb_row vc_row-fluid dt-sc-flowtop-bg vc_custom_1465471613194 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving">
-								<div class="wpb_column vc_column_container vc_col-sm-6">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class="vc_empty_space" style="height: 32px"><span
-													class="vc_empty_space_inner"></span></div>
-											<h2 style="font-size: 50px;color: #a58251;line-height: normal;text-align: right;font-family:Satisfy;font-weight:400;font-style:normal; "
-												class="vc_custom_heading">Welcome to Heal Holistic</h2>
-											<h2 style="font-size: 30px;color: #a58251;line-height: normal;text-align: right;font-family:Satisfy;font-weight:400;font-style:normal; "
-												class="vc_custom_heading"></h2>
-											<h2 style="font-size: 50px;color: #7e8846;text-align: right; letter-spacing: 0.3em; "
-												class="vc_custom_heading">a lifestyle</h2>
-											<div class="vc_empty_space" style="height: 16px"><span
-													class="vc_empty_space_inner"></span></div>
-											<div class="wpb_text_column wpb_content_element  vc_custom_1468328860656">
-												<div class="wpb_wrapper">
-													<p style="text-align: justify;">Heal Holistic is a sacred space of inner exploration and transformation, where we are committed to more than just products and services – we're dedicated to transforming your spiritual journey into a lifestyle change. Our carefully curated offerings, combined with our healing services, provide the tools and guidance you need to embark on a profound transformation. We believe that spirituality isn't just a practice; it's a way of life. Join us on this incredible journey to discover a path of enlightenment, healing, and self-discovery with us.</p>
+						</div>
+						<!-- Pick your yoga pack section -->
 
-												</div>
+						<!-- Your life of Healing section -->
+						<div class="vc_row-full-width vc_clearfix"></div>
+						<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5"
+							data-vc-parallax-image="https://kriyawp.wpengine.com/wp-content/uploads/2016/04/parallax-decor.png"
+							class="vc_row wpb_row vc_row-fluid dt-sc-flowtop-bg vc_custom_1465471613194 vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving">
+							<div class="wpb_column vc_column_container vc_col-sm-6">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<div class="vc_empty_space" style="height: 32px"><span
+												class="vc_empty_space_inner"></span></div>
+										<h2 style="font-size: 50px;color: #a58251;line-height: normal;text-align: right;font-family:Satisfy;font-weight:400;font-style:normal; "
+											class="vc_custom_heading">Welcome to Heal Holistic</h2>
+										<h2 style="font-size: 30px;color: #a58251;line-height: normal;text-align: right;font-family:Satisfy;font-weight:400;font-style:normal; "
+											class="vc_custom_heading"></h2>
+										<h2 style="font-size: 50px;color: #7e8846;text-align: right; letter-spacing: 0.3em; "
+											class="vc_custom_heading">a lifestyle</h2>
+										<div class="vc_empty_space" style="height: 16px"><span
+												class="vc_empty_space_inner"></span></div>
+										<div class="wpb_text_column wpb_content_element  vc_custom_1468328860656">
+											<div class="wpb_wrapper">
+												<p style="text-align: justify;">Heal Holistic is a sacred space of inner
+													exploration and transformation, where we are committed to more than
+													just products and services – we're dedicated to transforming your
+													spiritual journey into a lifestyle change. Our carefully curated
+													offerings, combined with our healing services, provide the tools and
+													guidance you need to embark on a profound transformation. We believe
+													that spirituality isn't just a practice; it's a way of life. Join us
+													on this incredible journey to discover a path of enlightenment,
+													healing, and self-discovery with us.</p>
+
 											</div>
-											<div
-												class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465628036509  vc_custom_1465628036509">
-												<span class="vc_sep_holder vc_sep_holder_l"><span
-														style="border-color:#a58251;"
-														class="vc_sep_line"></span></span><span
-													class="vc_sep_holder vc_sep_holder_r"><span
-														style="border-color:#a58251;" class="vc_sep_line"></span></span>
-											</div>
-											<p style="font-size: 17px;text-align: right;    font-style: italic; " class="vc_custom_heading">
-												We're delighted to engage with you and assist in expanding your understanding.</p>
-											<div class="vc_empty_space" style="height: 16px"><span
-													class="vc_empty_space_inner"></span></div>
-											<div class="vc_row wpb_row vc_inner vc_row-fluid">
-												<div class="alignright wpb_column vc_column_container vc_col-sm-12">
-													<div class="vc_column-inner ">
-														<div class="wpb_wrapper">
-															<div class="vc_btn3-container vc_btn3-inline"><a
-																	style="background-color:#7e8846; color:#f2e9d2;"
-																	class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-custom"
-																	href="#" title="KNOW MORE" target="_blank">Queries</a></div>
-															<div
-																class="vc_btn3-container  fill_pattern_bg vc_btn3-inline vc_custom_1468322281004">
-																
-															</div>
+										</div>
+										<div
+											class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465628036509  vc_custom_1465628036509">
+											<span class="vc_sep_holder vc_sep_holder_l"><span
+													style="border-color:#a58251;"
+													class="vc_sep_line"></span></span><span
+												class="vc_sep_holder vc_sep_holder_r"><span
+													style="border-color:#a58251;" class="vc_sep_line"></span></span>
+										</div>
+										<p style="font-size: 17px;text-align: right;    font-style: italic; "
+											class="vc_custom_heading">
+											We're delighted to engage with you and assist in expanding your
+											understanding.</p>
+										<div class="vc_empty_space" style="height: 16px"><span
+												class="vc_empty_space_inner"></span></div>
+										<div class="vc_row wpb_row vc_inner vc_row-fluid">
+											<div class="alignright wpb_column vc_column_container vc_col-sm-12">
+												<div class="vc_column-inner ">
+													<div class="wpb_wrapper">
+														<div class="vc_btn3-container vc_btn3-inline"><a
+																style="background-color:#7e8846; color:#f2e9d2;"
+																class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-custom"
+																href="#" title="KNOW MORE" target="_blank">Queries</a>
+														</div>
+														<div
+															class="vc_btn3-container  fill_pattern_bg vc_btn3-inline vc_custom_1468322281004">
+
 														</div>
 													</div>
 												</div>
@@ -2148,153 +2842,154 @@
 										</div>
 									</div>
 								</div>
-								<div class="wpb_column vc_column_container vc_col-sm-6">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper"></div>
-									</div>
+							</div>
+							<div class="wpb_column vc_column_container vc_col-sm-6">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper"></div>
 								</div>
 							</div>
-							<!-- Your life of Healing section -->
+						</div>
+						<!-- Your life of Healing section -->
 
-							<!-- About reckkha malhotra section -->
-							<div class="vc_row-full-width vc_clearfix" ></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false"
-								class="vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_custom_1465472398773 vc_row-has-fill">
-								<h2 style="text-align: center; "
-												class="vc_custom_heading vc_custom_1462010616329">Our Services</h2>
-								<div class="rs_col-sm-6 wpb_column vc_column_container vc_col-sm-3">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class='dt-sc-icon-box type5 round large-icon pink'>
-												<div class="image-wrapper"><img width="300" height="300"
-														src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb1.jpg"
-														class="dt-sc-icon-box-image attachment-full" alt="icon-thumb1"
-														decoding="async" fetchpriority="high"
-														srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb1.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb1-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb1-180x180.jpg 180w"
-														sizes="(max-width: 300px) 100vw, 300px" /></div>
-												<div class="icon-content">
-													<h4>Heal Holistic Healing Session</h4>
-													<div
-														class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465023562016  vc_custom_1465023562016">
-														<span class="vc_sep_holder vc_sep_holder_l"><span
-																style="border-color:#a58251;"
-																class="vc_sep_line"></span></span><span
-															class="vc_sep_holder vc_sep_holder_r"><span
-																style="border-color:#a58251;"
-																class="vc_sep_line"></span></span>
-													</div>
-													<p>Lusto odio dignissimos ducimus qui blanditiis praesentium
-														voluptatum deleniti atque corrupti quos dolores et quas
-														molestias provident destiny is about voles.</p>
+						<!-- About reckkha malhotra section -->
+						<div class="vc_row-full-width vc_clearfix"></div>
+						<div data-vc-full-width="true" data-vc-full-width-init="false"
+							class="vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_custom_1465472398773 vc_row-has-fill">
+							<h2 style="text-align: center; " class="vc_custom_heading vc_custom_1462010616329">Our
+								Services</h2>
+							<div class="rs_col-sm-6 wpb_column vc_column_container vc_col-sm-3">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<div class='dt-sc-icon-box type5 round large-icon pink'>
+											<div class="image-wrapper"><img width="300" height="300"
+													src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb1.jpg"
+													class="dt-sc-icon-box-image attachment-full" alt="icon-thumb1"
+													decoding="async" fetchpriority="high"
+													srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb1.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb1-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb1-180x180.jpg 180w"
+													sizes="(max-width: 300px) 100vw, 300px" /></div>
+											<div class="icon-content">
+												<h4>Heal Holistic Healing Session</h4>
+												<div
+													class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465023562016  vc_custom_1465023562016">
+													<span class="vc_sep_holder vc_sep_holder_l"><span
+															style="border-color:#a58251;"
+															class="vc_sep_line"></span></span><span
+														class="vc_sep_holder vc_sep_holder_r"><span
+															style="border-color:#a58251;"
+															class="vc_sep_line"></span></span>
 												</div>
+												<p>Lusto odio dignissimos ducimus qui blanditiis praesentium
+													voluptatum deleniti atque corrupti quos dolores et quas
+													molestias provident destiny is about voles.</p>
 											</div>
-										</div>
-									</div>
-								</div>
-								<div class="rs_col-sm-6 wpb_column vc_column_container vc_col-sm-3">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class='dt-sc-icon-box type5 round large-icon yellow'>
-												<div class="image-wrapper"><img width="300" height="300"
-														src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb2.jpg"
-														class="dt-sc-icon-box-image attachment-full" alt="icon-thumb2"
-														decoding="async"
-														srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb2.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb2-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb2-180x180.jpg 180w"
-														sizes="(max-width: 300px) 100vw, 300px" /></div>
-												<div class="icon-content">
-													<h4>Cord Cutting Session</h4>
-													<div
-														class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465023562016  vc_custom_1465023562016">
-														<span class="vc_sep_holder vc_sep_holder_l"><span
-																style="border-color:#a58251;"
-																class="vc_sep_line"></span></span><span
-															class="vc_sep_holder vc_sep_holder_r"><span
-																style="border-color:#a58251;"
-																class="vc_sep_line"></span></span>
-													</div>
-													<p>Lusto odio dignissimos ducimus qui blanditiis praesentium
-														voluptatum deleniti atque corrupti quos dolores et quas
-														molestias provident destiny is about voles.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="rs_col-sm-6 wpb_column vc_column_container vc_col-sm-3">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class='dt-sc-icon-box type5 round large-icon skyblue'>
-												<div class="image-wrapper"><img width="300" height="300"
-														src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb3.jpg"
-														class="dt-sc-icon-box-image attachment-full" alt="icon-thumb3"
-														decoding="async" loading="lazy"
-														srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb3.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb3-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb3-180x180.jpg 180w"
-														sizes="(max-width: 300px) 100vw, 300px" /></div>
-												<div class="icon-content">
-													<h4>Dynamic Chakra Healing Session</h4>
-													<div
-														class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465023562016  vc_custom_1465023562016">
-														<span class="vc_sep_holder vc_sep_holder_l"><span
-																style="border-color:#a58251;"
-																class="vc_sep_line"></span></span><span
-															class="vc_sep_holder vc_sep_holder_r"><span
-																style="border-color:#a58251;"
-																class="vc_sep_line"></span></span>
-													</div>
-													<p>Lusto odio dignissimos ducimus qui blanditiis praesentium
-														voluptatum deleniti atque corrupti quos dolores et quas
-														molestias provident destiny is about voles.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="rs_col-sm-6 wpb_column vc_column_container vc_col-sm-3">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class='dt-sc-icon-box type5 round large-icon lightbrown'>
-												<div class="image-wrapper"><img width="300" height="300"
-														src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb4.jpg"
-														class="dt-sc-icon-box-image attachment-full" alt="icon-thumb4"
-														decoding="async" loading="lazy"
-														srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb4.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb4-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb4-180x180.jpg 180w"
-														sizes="(max-width: 300px) 100vw, 300px" /></div>
-												<div class="icon-content">
-													<h4>Shiv Shakti Meditation</h4>
-													<div
-														class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465023562016  vc_custom_1465023562016">
-														<span class="vc_sep_holder vc_sep_holder_l"><span
-																style="border-color:#a58251;"
-																class="vc_sep_line"></span></span><span
-															class="vc_sep_holder vc_sep_holder_r"><span
-																style="border-color:#a58251;"
-																class="vc_sep_line"></span></span>
-													</div>
-													<p>Lusto odio dignissimos ducimus qui blanditiis praesentium
-														voluptatum deleniti atque corrupti quos dolores et quas
-														molestias provident destiny is about voles.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class="vc_empty_space" style="height: 32px"><span
-													class="vc_empty_space_inner"></span></div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- About reckkha malhotra section -->
+							<div class="rs_col-sm-6 wpb_column vc_column_container vc_col-sm-3">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<div class='dt-sc-icon-box type5 round large-icon yellow'>
+											<div class="image-wrapper"><img width="300" height="300"
+													src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb2.jpg"
+													class="dt-sc-icon-box-image attachment-full" alt="icon-thumb2"
+													decoding="async"
+													srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb2.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb2-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb2-180x180.jpg 180w"
+													sizes="(max-width: 300px) 100vw, 300px" /></div>
+											<div class="icon-content">
+												<h4>Cord Cutting Session</h4>
+												<div
+													class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465023562016  vc_custom_1465023562016">
+													<span class="vc_sep_holder vc_sep_holder_l"><span
+															style="border-color:#a58251;"
+															class="vc_sep_line"></span></span><span
+														class="vc_sep_holder vc_sep_holder_r"><span
+															style="border-color:#a58251;"
+															class="vc_sep_line"></span></span>
+												</div>
+												<p>Lusto odio dignissimos ducimus qui blanditiis praesentium
+													voluptatum deleniti atque corrupti quos dolores et quas
+													molestias provident destiny is about voles.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rs_col-sm-6 wpb_column vc_column_container vc_col-sm-3">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<div class='dt-sc-icon-box type5 round large-icon skyblue'>
+											<div class="image-wrapper"><img width="300" height="300"
+													src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb3.jpg"
+													class="dt-sc-icon-box-image attachment-full" alt="icon-thumb3"
+													decoding="async" loading="lazy"
+													srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb3.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb3-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb3-180x180.jpg 180w"
+													sizes="(max-width: 300px) 100vw, 300px" /></div>
+											<div class="icon-content">
+												<h4>Dynamic Chakra Healing Session</h4>
+												<div
+													class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465023562016  vc_custom_1465023562016">
+													<span class="vc_sep_holder vc_sep_holder_l"><span
+															style="border-color:#a58251;"
+															class="vc_sep_line"></span></span><span
+														class="vc_sep_holder vc_sep_holder_r"><span
+															style="border-color:#a58251;"
+															class="vc_sep_line"></span></span>
+												</div>
+												<p>Lusto odio dignissimos ducimus qui blanditiis praesentium
+													voluptatum deleniti atque corrupti quos dolores et quas
+													molestias provident destiny is about voles.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rs_col-sm-6 wpb_column vc_column_container vc_col-sm-3">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<div class='dt-sc-icon-box type5 round large-icon lightbrown'>
+											<div class="image-wrapper"><img width="300" height="300"
+													src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb4.jpg"
+													class="dt-sc-icon-box-image attachment-full" alt="icon-thumb4"
+													decoding="async" loading="lazy"
+													srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb4.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb4-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb4-180x180.jpg 180w"
+													sizes="(max-width: 300px) 100vw, 300px" /></div>
+											<div class="icon-content">
+												<h4>Shiv Shakti Meditation</h4>
+												<div
+													class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text vc_custom_1465023562016  vc_custom_1465023562016">
+													<span class="vc_sep_holder vc_sep_holder_l"><span
+															style="border-color:#a58251;"
+															class="vc_sep_line"></span></span><span
+														class="vc_sep_holder vc_sep_holder_r"><span
+															style="border-color:#a58251;"
+															class="vc_sep_line"></span></span>
+												</div>
+												<p>Lusto odio dignissimos ducimus qui blanditiis praesentium
+													voluptatum deleniti atque corrupti quos dolores et quas
+													molestias provident destiny is about voles.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="wpb_column vc_column_container vc_col-sm-12">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<div class="vc_empty_space" style="height: 32px"><span
+												class="vc_empty_space_inner"></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- About reckkha malhotra section -->
 
-							<!-- Why KRIYA? section -->
-							<div class="vc_row-full-width vc_clearfix"></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false"
+						<!-- Why KRIYA? section -->
+						<div class="vc_row-full-width vc_clearfix"></div>
+						<div data-vc-full-width="true" data-vc-full-width-init="false"
 							class="vc_row wpb_row vc_row-fluid vc_custom_1465648523135 vc_row-has-fill">
-							
-								<!-- <div class="wpb_column vc_column_container vc_col-sm-12">
+
+							<!-- <div class="wpb_column vc_column_container vc_col-sm-12">
 									<div class="vc_column-inner ">
 										<div class="wpb_wrapper">
 											<h2 style="text-align: center; "
@@ -2391,346 +3086,335 @@
 										</div>
 									</div>
 								</div> -->
-							</div>
-							<!-- Why KRIYA? section -->
+						</div>
+						<!-- Why KRIYA? section -->
 
 
-							<!-- Gallery section -->
-							<div class="vc_row-full-width vc_clearfix"></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false"
-								data-vc-stretch-content="true"
-								class="vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_row-no-padding vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-								<div
-									class="dt-sc-one-fifth inner-frame-border rs_col-sm-12 rs_col_nobtm_space wpb_column vc_column_container vc_col-sm-3 vc_col-lg-3 vc_col-md-12 vc_col-has-fill">
-									<div class="vc_column-inner vc_custom_1468392864332">
-										<div class="wpb_wrapper">
-											<h2 style="text-align: center; "
-												class="vc_custom_heading vc_custom_1465536639319">Gallery</h2>
-											<div
-												class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_40 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text">
-												<span class="vc_sep_holder vc_sep_holder_l"><span
-														style="border-color:#a58251;"
-														class="vc_sep_line"></span></span><span
-													class="vc_sep_holder vc_sep_holder_r"><span
-														style="border-color:#a58251;" class="vc_sep_line"></span></span>
-											</div>
-											<div class="wpb_text_column wpb_content_element  vc_custom_1465539511713">
-												<div class="wpb_wrapper">
-													<p style="padding: 0 25px; text-align: center;">Let us continue this journey together, as we embrace the profound connection between our inner selves and the world around us, fostering growth and enlightenment along the way</p>
-
-												</div>
-											</div>
-											<div class="vc_empty_space" style="height: 30px"><span
-													class="vc_empty_space_inner"></span></div>
-											<div class="vc_btn3-container  fill_pattern_bg vc_btn3-center"><button
-													class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-flat vc_btn3-color-skincolor">View
-													Gallery</button></div>
+						<!-- Gallery section -->
+						<div class="vc_row-full-width vc_clearfix"></div>
+						<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"
+							class="vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_row-no-padding vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+							<div
+								class="dt-sc-one-fifth inner-frame-border rs_col-sm-12 rs_col_nobtm_space wpb_column vc_column_container vc_col-sm-3 vc_col-lg-3 vc_col-md-12 vc_col-has-fill">
+								<div class="vc_column-inner vc_custom_1468392864332">
+									<div class="wpb_wrapper">
+										<h2 style="text-align: center; "
+											class="vc_custom_heading vc_custom_1465536639319">Gallery</h2>
+										<div
+											class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_40 vc_sep_stitch-dashed vc_sep_pos_align_center vc_separator_no_text">
+											<span class="vc_sep_holder vc_sep_holder_l"><span
+													style="border-color:#a58251;"
+													class="vc_sep_line"></span></span><span
+												class="vc_sep_holder vc_sep_holder_r"><span
+													style="border-color:#a58251;" class="vc_sep_line"></span></span>
 										</div>
-									</div>
-								</div>
-								<div
-									class="dt-sc-four-fifth rs_col-sm-12 rs_col_nobtm_space wpb_column vc_column_container vc_col-sm-9 vc_col-lg-9 vc_col-md-12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div data-column=".dt-sc-one-fourth"
-												class="dt-sc-portfolio-container no-space">
-												<div id="dt_portfolios-239"
-													class="post-239 dt_portfolios type-dt_portfolios status-publish has-post-thumbnail hentry dt_portfolios_categories-chakkrasan dt_portfolios_categories-padmasan no-space  column dt-sc-one-fourth first ">
-													<div class="portfolio">
-														<figure> <img
-																src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/gallery1.jpg"
-																alt="Cras tristique purus non lacus"
-																title="Cras tristique purus non lacus" />
-															<div class="image-overlay">
-																<div class="portfolio-detail"><a href="#"
-																		class="dt-portfolio-like " data-id="239"><span
-																			class="icon icon-heart"><i
-																				class="label">214</i></span></a>
-																	<div class="dt-portfolio-meta">
-																		<h5><a
-																				href="#">Cras
-																				tristique purus non lacus</a></h5>
-																		<p>Internal Spirit &amp; soul cleansing</p>
-																	</div>
-																</div>
-															</div>
-														</figure>
-													</div>
-												</div>
-												<div id="dt_portfolios-238"
-													class="post-238 dt_portfolios type-dt_portfolios status-publish has-post-thumbnail hentry dt_portfolios_categories-padmasan no-space  column dt-sc-one-fourth ">
-													<div class="portfolio">
-														<figure> <img
-																src="https://kriyawp.wpengine.com/wp-content/uploads/2014/01/gallery2.jpg"
-																alt="Duis fermentum felis"
-																title="Duis fermentum felis" />
-															<div class="image-overlay">
-																<div class="portfolio-detail"><a href="#"
-																		class="dt-portfolio-like " data-id="238"><span
-																			class="icon icon-heart"><i
-																				class="label">189</i></span></a>
-																	<div class="dt-portfolio-meta">
-																		<h5><a
-																				href="#">Duis
-																				fermentum felis</a></h5>
-																		<p>Phasellus tincidunt ac sed</p>
-																	</div>
-																</div>
-															</div>
-														</figure>
-													</div>
-												</div>
-												<div id="dt_portfolios-237"
-													class="post-237 dt_portfolios type-dt_portfolios status-publish has-post-thumbnail hentry dt_portfolios_categories-chakkrasan dt_portfolios_categories-karuvasan dt_portfolios_categories-padmasan dt_portfolios_categories-thallasan no-space  column dt-sc-one-fourth grid-sizer1">
-													<div class="portfolio">
-														<figure> <img
-																src="https://kriyawp.wpengine.com/wp-content/uploads/2014/01/gallery4.jpg"
-																alt="Quisque id maximus leo"
-																title="Quisque id maximus leo" />
-															<div class="image-overlay">
-																<div class="portfolio-detail"><a href="#"
-																		class="dt-portfolio-like " data-id="237"><span
-																			class="icon icon-heart"><i
-																				class="label">238</i></span></a>
-																	<div class="dt-portfolio-meta">
-																		<h5><a
-																				href="#">Quisque
-																				id maximus leo</a></h5>
-																		<p>Curabitur nec volutpat sed</p>
-																	</div>
-																</div>
-															</div>
-														</figure>
-													</div>
-												</div>
-												<div id="dt_portfolios-432"
-													class="post-432 dt_portfolios type-dt_portfolios status-publish has-post-thumbnail hentry dt_portfolios_categories-chakkrasan dt_portfolios_categories-padmasan dt_portfolios_categories-thallasan no-space  column dt-sc-one-fourth ">
-													<div class="portfolio">
-														<figure> <img
-																src="https://kriyawp.wpengine.com/wp-content/uploads/2014/01/gallery3.jpg"
-																alt="Proin venenatis felis"
-																title="Proin venenatis felis" />
-															<div class="image-overlay">
-																<div class="portfolio-detail"><a href="#"
-																		class="dt-portfolio-like " data-id="432"><span
-																			class="icon icon-heart"><i
-																				class="label">195</i></span></a>
-																	<div class="dt-portfolio-meta">
-																		<h5><a
-																				href="#">Proin
-																				venenatis felis</a></h5>
-																		<p>Vivamus accumsan leo metus</p>
-																	</div>
-																</div>
-															</div>
-														</figure>
-													</div>
-												</div>
+										<div class="wpb_text_column wpb_content_element  vc_custom_1465539511713">
+											<div class="wpb_wrapper">
+												<p style="padding: 0 25px; text-align: center;">Explore the beauty of
+													holistic living through our gallery.</p>
+
 											</div>
 										</div>
+										<div class="vc_empty_space" style="height: 30px"><span
+												class="vc_empty_space_inner"></span></div>
+										<div class="vc_btn3-container  fill_pattern_bg vc_btn3-center"><button
+												class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-flat vc_btn3-color-skincolor">View
+												Gallery</button></div>
 									</div>
 								</div>
 							</div>
-							<!-- Gallery section -->
-
-							<!-- Our Events section -->
-							<div class="vc_row-full-width vc_clearfix"></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false"
-								class="vc_row wpb_row vc_row-fluid vc_custom_1466761589133 vc_row-has-fill">
-								
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<h2 style="text-align: center; "
-												class="vc_custom_heading vc_custom_1465539335488">Our Events</h2>
-											<div
-												class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_40 vc_sep_stitch-dashed vc_sep_pos_align_center ico-size-small">
-												<span class="vc_sep_holder vc_sep_holder_l"><span
-														style="border-color:#a58251;" class="vc_sep_line"></span></span>
-												<div class="vc_icon_element vc_icon_element-outer vc_icon_element-img">
-													<div class="vc_icon_element-inner"><span
-															class="vc_icon_element-icon"><img width="60" height="60"
-																src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-flower-stones.png"
-																class="vc_text_separator-img attachment-full"
-																alt="ico-flower-stones" decoding="async"
-																loading="lazy" /></span></div>
-												</div><span class="vc_sep_holder vc_sep_holder_r"><span
-														style="border-color:#a58251;" class="vc_sep_line"></span></span>
-											</div>
-											<div class="wpb_text_column wpb_content_element  vc_custom_1465454356972">
-												<div class="wpb_wrapper">
-													<p style="text-align: center;">We at KRIYA provide various services
-														to the nature of the clients. Wish how you would like to spend
-														the time here <br> we can talk and come to a conclusion.</p>
-
-												</div>
-											</div>
-											<div class="vc_empty_space" style="height: 64px"><span
-													class="vc_empty_space_inner"></span></div>
-											<div class=" column dt-sc-one-half first">
-												<div class="dt-sc-event type4">
-													<div class="dt-sc-event-thumb"><img width="570" height="460"
-															src="https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event1.jpg"
-															class="attachment-full size-full wp-post-image"
-															alt="Its Selfie Time for our Young Trainees"
-															decoding="async"
-															title="Its Selfie Time for our Young Trainees"
-															srcset="https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event1.jpg 570w, https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event1-300x242.jpg 300w"
-															sizes="(max-width: 570px) 100vw, 570px" />
-														<p class="dt-sc-event-date"><span>01</span> <i>December, Tuesday
-																- 8:00 am - 5:00 pm</i> <br>New Orleans, Louisiana</p>
-													</div>
-													<h2 class="entry-title"><a
-															href="#">Its
-															Selfie Time for our Young Trainees</a></h2>
-												</div>
-											</div>
-											<div class=" column dt-sc-one-half">
-												<div class="dt-sc-event type4">
-													<div class="dt-sc-event-thumb"><img width="570" height="460"
-															src="https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event2.jpg"
-															class="attachment-full size-full wp-post-image"
-															alt="Lets Unite the World for Awareness" decoding="async"
-															title="Lets Unite the World for Awareness"
-															srcset="https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event2.jpg 570w, https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event2-300x242.jpg 300w"
-															sizes="(max-width: 570px) 100vw, 570px" />
-														<p class="dt-sc-event-date"><span>09</span> <i>March, Tuesday -
-																8:00 am - 5:00 pm</i> <br>Atlanta, Georgia</p>
-													</div>
-													<h2 class="entry-title"><a
-															href="#">Lets
-															Unite the World for Awareness</a></h2>
-												</div>
-											</div>
-											<div class="dt-sc-hr-invisible-small"> </div>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							<!-- Our Events section -->
-
-							<!-- About KRIYA section -->
-							<div class="vc_row-full-width vc_clearfix"></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false"
-								class="vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_custom_1465650713992 vc_row-has-fill">
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class="vc_empty_space" style="height: 64px"><span
-													class="vc_empty_space_inner"></span></div>
-										</div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner vc_custom_1465550877496">
-										<div class="wpb_wrapper">
-											<h2 style="text-align: left; " class="vc_custom_heading" id="aboutus">About US</h2>
-											<div
-												class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_stitch-dashed vc_sep_pos_align_left vc_separator_no_text">
-												<span class="vc_sep_holder vc_sep_holder_l"><span
-														style="border-color:#a58251;"
-														class="vc_sep_line"></span></span><span
-													class="vc_sep_holder vc_sep_holder_r"><span
-														style="border-color:#a58251;" class="vc_sep_line"></span></span>
-											</div>
-											<div class="vc_empty_space" style="height: 10px"><span
-													class="vc_empty_space_inner"></span></div>
-										</div>
-									</div>
-								</div>
-								<div class="rs_col-sm-12 wpb_column vc_column_container vc_col-sm-6">
-									<div class="vc_column-inner vc_custom_1468330365001">
-										<div class="wpb_wrapper">
-											<div
-												class="wpb_single_image wpb_content_element vc_align_left   outer-frame-border">
-
-												<figure class="wpb_wrapper vc_figure">
-													<div class="vc_single_image-wrapper   vc_box_border_grey"><img
-															width="660" height="630"
-															src="https://kriyawp.wpengine.com/wp-content/uploads/2016/04/about-yoga.png"
-															class="vc_single_image-img attachment-full" alt="about-yoga"
-															decoding="async" loading="lazy"
-															srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/04/about-yoga.png 660w, https://kriyawp.wpengine.com/wp-content/uploads/2016/04/about-yoga-300x286.png 300w"
-															sizes="(max-width: 660px) 100vw, 660px" /></div>
-												</figure>
-											</div>
-											<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1465551003895">
-												<div class="wpb_column vc_column_container vc_col-sm-9">
-													<div class="vc_column-inner vc_custom_1465550907537">
-														<div class="wpb_wrapper">
-															<div
-																class="wpb_text_column wpb_content_element  vc_custom_1465545060242">
-																<div class="wpb_wrapper">
-																	<p>We at KRIYA provide various services to the
-																		nature of the clients. Wish how you would like
-																		to spend the time here we can talk &amp; come to
-																		a conclusion.</p>
-
+							<div
+								class="dt-sc-four-fifth rs_col-sm-12 rs_col_nobtm_space wpb_column vc_column_container vc_col-sm-9 vc_col-lg-9 vc_col-md-12">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<div data-column=".dt-sc-one-fourth" class="dt-sc-portfolio-container no-space">
+											<div id="dt_portfolios-239"
+												class="post-239 dt_portfolios type-dt_portfolios status-publish has-post-thumbnail hentry dt_portfolios_categories-chakkrasan dt_portfolios_categories-padmasan no-space  column dt-sc-one-fourth first ">
+												<div class="portfolio">
+													<figure> <img
+															src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/gallery1.jpg"
+															alt="Cras tristique purus non lacus"
+															title="Cras tristique purus non lacus" />
+														<div class="image-overlay">
+															<div class="portfolio-detail"><a href="#"
+																	class="dt-portfolio-like " data-id="239"><span
+																		class="icon icon-heart"><i
+																			class="label">214</i></span></a>
+																<div class="dt-portfolio-meta">
+																	<h5><a href="#">Cras
+																			tristique purus non lacus</a></h5>
+																	<p>Internal Spirit &amp; soul cleansing</p>
 																</div>
 															</div>
 														</div>
-													</div>
+													</figure>
 												</div>
-												<div class="wpb_column vc_column_container vc_col-sm-3">
-													<div class="vc_column-inner vc_custom_1465550917142">
-														<div class="wpb_wrapper">
-															<div
-																class="vc_btn3-container  fill_pattern_bg vc_btn3-right">
-																<button
-																	class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-flat vc_btn3-color-skincolor">Learn
-																	More</button></div>
+											</div>
+											<div id="dt_portfolios-238"
+												class="post-238 dt_portfolios type-dt_portfolios status-publish has-post-thumbnail hentry dt_portfolios_categories-padmasan no-space  column dt-sc-one-fourth ">
+												<div class="portfolio">
+													<figure> <img
+															src="https://kriyawp.wpengine.com/wp-content/uploads/2014/01/gallery2.jpg"
+															alt="Duis fermentum felis" title="Duis fermentum felis" />
+														<div class="image-overlay">
+															<div class="portfolio-detail"><a href="#"
+																	class="dt-portfolio-like " data-id="238"><span
+																		class="icon icon-heart"><i
+																			class="label">189</i></span></a>
+																<div class="dt-portfolio-meta">
+																	<h5><a href="#">Duis
+																			fermentum felis</a></h5>
+																	<p>Phasellus tincidunt ac sed</p>
+																</div>
+															</div>
 														</div>
-													</div>
+													</figure>
+												</div>
+											</div>
+											<div id="dt_portfolios-237"
+												class="post-237 dt_portfolios type-dt_portfolios status-publish has-post-thumbnail hentry dt_portfolios_categories-chakkrasan dt_portfolios_categories-karuvasan dt_portfolios_categories-padmasan dt_portfolios_categories-thallasan no-space  column dt-sc-one-fourth grid-sizer1">
+												<div class="portfolio">
+													<figure> <img
+															src="https://kriyawp.wpengine.com/wp-content/uploads/2014/01/gallery4.jpg"
+															alt="Quisque id maximus leo"
+															title="Quisque id maximus leo" />
+														<div class="image-overlay">
+															<div class="portfolio-detail"><a href="#"
+																	class="dt-portfolio-like " data-id="237"><span
+																		class="icon icon-heart"><i
+																			class="label">238</i></span></a>
+																<div class="dt-portfolio-meta">
+																	<h5><a href="#">Quisque
+																			id maximus leo</a></h5>
+																	<p>Curabitur nec volutpat sed</p>
+																</div>
+															</div>
+														</div>
+													</figure>
+												</div>
+											</div>
+											<div id="dt_portfolios-432"
+												class="post-432 dt_portfolios type-dt_portfolios status-publish has-post-thumbnail hentry dt_portfolios_categories-chakkrasan dt_portfolios_categories-padmasan dt_portfolios_categories-thallasan no-space  column dt-sc-one-fourth ">
+												<div class="portfolio">
+													<figure> <img
+															src="https://kriyawp.wpengine.com/wp-content/uploads/2014/01/gallery3.jpg"
+															alt="Proin venenatis felis" title="Proin venenatis felis" />
+														<div class="image-overlay">
+															<div class="portfolio-detail"><a href="#"
+																	class="dt-portfolio-like " data-id="432"><span
+																		class="icon icon-heart"><i
+																			class="label">195</i></span></a>
+																<div class="dt-portfolio-meta">
+																	<h5><a href="#">Proin
+																			venenatis felis</a></h5>
+																	<p>Vivamus accumsan leo metus</p>
+																</div>
+															</div>
+														</div>
+													</figure>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="rs_col-sm-12 wpb_column vc_column_container vc_col-sm-6">
-									<div class="vc_column-inner vc_custom_1468330402063">
+							</div>
+						</div>
+						<!-- Gallery section -->
+
+						<!-- Our Events section -->
+						<div class="vc_row-full-width vc_clearfix"></div>
+						<div data-vc-full-width="true" data-vc-full-width-init="false"
+							class="vc_row wpb_row vc_row-fluid vc_custom_1466761589133 vc_row-has-fill">
+
+							<div class="wpb_column vc_column_container vc_col-sm-12">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<h2 style="text-align: center; "
+											class="vc_custom_heading vc_custom_1465539335488">Our Events</h2>
+										<div
+											class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_40 vc_sep_stitch-dashed vc_sep_pos_align_center ico-size-small">
+											<span class="vc_sep_holder vc_sep_holder_l"><span
+													style="border-color:#a58251;" class="vc_sep_line"></span></span>
+											<div class="vc_icon_element vc_icon_element-outer vc_icon_element-img">
+												<div class="vc_icon_element-inner"><span
+														class="vc_icon_element-icon"><img width="60" height="60"
+															src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-flower-stones.png"
+															class="vc_text_separator-img attachment-full"
+															alt="ico-flower-stones" decoding="async"
+															loading="lazy" /></span></div>
+											</div><span class="vc_sep_holder vc_sep_holder_r"><span
+													style="border-color:#a58251;" class="vc_sep_line"></span></span>
+										</div>
+										<div class="wpb_text_column wpb_content_element  vc_custom_1465454356972">
+											<div class="wpb_wrapper">
+												<p style="text-align: center;">Stay updated on upcoming holistic events
+													and join us on a journey to wellness and mindfulness.</p>
+
+											</div>
+										</div>
+										<div class="vc_empty_space" style="height: 64px"><span
+												class="vc_empty_space_inner"></span></div>
+										<div class=" column dt-sc-one-half first">
+											<div class="dt-sc-event type4">
+												<div class="dt-sc-event-thumb"><img width="570" height="460"
+														src="https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event1.jpg"
+														class="attachment-full size-full wp-post-image"
+														alt="Its Selfie Time for our Young Trainees" decoding="async"
+														title="Its Selfie Time for our Young Trainees"
+														srcset="https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event1.jpg 570w, https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event1-300x242.jpg 300w"
+														sizes="(max-width: 570px) 100vw, 570px" />
+													<p class="dt-sc-event-date"><span>01</span> <i>December, Tuesday
+															- 8:00 am - 5:00 pm</i> <br>New Orleans, Louisiana</p>
+												</div>
+												<h2 class="entry-title"><a href="#">Its
+														Selfie Time for our Young Trainees</a></h2>
+											</div>
+										</div>
+										<div class=" column dt-sc-one-half">
+											<div class="dt-sc-event type4">
+												<div class="dt-sc-event-thumb"><img width="570" height="460"
+														src="https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event2.jpg"
+														class="attachment-full size-full wp-post-image"
+														alt="Lets Unite the World for Awareness" decoding="async"
+														title="Lets Unite the World for Awareness"
+														srcset="https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event2.jpg 570w, https://kriyawp.wpengine.com/wp-content/uploads/2015/02/event2-300x242.jpg 300w"
+														sizes="(max-width: 570px) 100vw, 570px" />
+													<p class="dt-sc-event-date"><span>09</span> <i>March, Tuesday -
+															8:00 am - 5:00 pm</i> <br>Atlanta, Georgia</p>
+												</div>
+												<h2 class="entry-title"><a href="#">Lets
+														Unite the World for Awareness</a></h2>
+											</div>
+										</div>
+										<div class="dt-sc-hr-invisible-small"> </div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Our Events section -->
+
+						<!-- About KRIYA section -->
+						<div class="vc_row-full-width vc_clearfix"></div>
+						<div data-vc-full-width="true" data-vc-full-width-init="false"
+							class="vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_custom_1465650713992 vc_row-has-fill">
+							<div class="wpb_column vc_column_container vc_col-sm-12">
+								<div class="vc_column-inner ">
+									<div class="wpb_wrapper">
+										<div class="vc_empty_space" style="height: 64px"><span
+												class="vc_empty_space_inner"></span></div>
+									</div>
+								</div>
+							</div>
+							<div class="wpb_column vc_column_container vc_col-sm-12">
+								<div class="vc_column-inner vc_custom_1465550877496">
+									<div class="wpb_wrapper">
+										<h2 style="text-align: left; " class="vc_custom_heading" id="aboutus">About US
+										</h2>
+										<div
+											class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_10 vc_sep_stitch-dashed vc_sep_pos_align_left vc_separator_no_text">
+											<span class="vc_sep_holder vc_sep_holder_l"><span
+													style="border-color:#a58251;"
+													class="vc_sep_line"></span></span><span
+												class="vc_sep_holder vc_sep_holder_r"><span
+													style="border-color:#a58251;" class="vc_sep_line"></span></span>
+										</div>
+										<div class="vc_empty_space" style="height: 10px"><span
+												class="vc_empty_space_inner"></span></div>
+									</div>
+								</div>
+							</div>
+							<div class="rs_col-sm-12 wpb_column vc_column_container vc_col-sm-6">
+								<div class="vc_column-inner vc_custom_1468330365001">
+									<div class="wpb_wrapper">
+										<div
+											class="wpb_single_image wpb_content_element vc_align_left   outer-frame-border">
+
+											<figure class="wpb_wrapper vc_figure">
+												<div class="vc_single_image-wrapper   vc_box_border_grey"><img
+														width="660" height="630"
+														src="https://kriyawp.wpengine.com/wp-content/uploads/2016/04/about-yoga.png"
+														class="vc_single_image-img attachment-full" alt="about-yoga"
+														decoding="async" loading="lazy"
+														srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/04/about-yoga.png 660w, https://kriyawp.wpengine.com/wp-content/uploads/2016/04/about-yoga-300x286.png 300w"
+														sizes="(max-width: 660px) 100vw, 660px" /></div>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rs_col-sm-12 wpb_column vc_column_container vc_col-sm-6">
+								<div class="wpb_column vc_column_container vc_col-sm-9">
+									<div class="vc_column-inner vc_custom_1465550907537">
 										<div class="wpb_wrapper">
-											<h6 style="text-align: left; " class="vc_custom_heading">Our Status in
-												Numbers</h6>
-											<div class="vc_empty_space" style="height: 20px"><span
-													class="vc_empty_space_inner"></span></div>
-											<div class='dt-sc-counter type5 alter'>
-												<div class='dt-sc-couter-icon-holder'>
-													<div class="icon-wrapper"><span
-															class='dt-stroke-icon icon icon-users'> </span></div>
-													<div class='dt-sc-counter-number' data-value='1430' data-append='+'>
-														1430</div>
-												</div>
-												<h4>Total Users</h4>
-												<p>So blinded by desire, that they cannot foresee the pain and trouble
-													that are bound to ensue.</p>
-											</div>
-											<div class="vc_empty_space" style="height: 20px"><span
-													class="vc_empty_space_inner"></span></div>
-											<div class='dt-sc-counter type5 alter'>
-												<div class='dt-sc-couter-icon-holder'>
-													<div class="icon-wrapper"><span
-															class='dt-stroke-icon icon icon-glasses'> </span></div>
-													<div class='dt-sc-counter-number' data-value='10' data-append='+'>10
+											<div class="wpb_text_column wpb_content_element  vc_custom_1465545060242">
+												<div class="wpb_wrapper">
+													<div class="text-container" style="text-align: justify;">
+														<p class="initial-text">
+															<!-- Your 25-word excerpt goes here -->
+															<b>Meet Reckhha Malhotra</b> – a beacon of holistic healing
+															and personal transformation. With over 16 years of
+															experience in the field of a diverse array of
+															qualifications, from Reiki Grandmaster to being a life
+															coach, she is a dedicated author, and the visionary founder
+															of Heal Holistic and The Absolute Foundation. Reckhha's
+															journey is a testament to her unwavering commitment to
+															nurturing well-being, empowering individuals, and awakening
+															healers. Join her on a path of enlightenment and
+															transformation.
+														</p>
+														<h6 style="text-align: left; " class="vc_custom_heading">Our
+															Status in
+															Numbers</h6>
+														<!-- <button id="read-more-button">Read More</button> -->
 													</div>
+
+													<!-- <p >Meet Reckhha Malhotra – a beacon of holistic healing and personal transformation. With over 16 years of experience in the field of a diverse array of qualifications, from Reiki Grandmaster to being a life coach, she is a dedicated author, and the visionary founder of Heal Holistic and The Absolute Foundation. Reckhha's journey is a testament to her unwavering commitment to nurturing well-being, empowering individuals, and awakening healers. Join her on a path of enlightenment and transformation.</p> -->
 												</div>
-												<h4>Years of Experience</h4>
-												<p>So blinded by desire, that they cannot foresee the pain and trouble
-													that are bound to ensue; and equal blame belongs.</p>
 											</div>
-											<div class="vc_empty_space" style="height: 20px"><span
-													class="vc_empty_space_inner"></span></div>
-											<div class='dt-sc-counter type5 alter'>
-												<div class='dt-sc-couter-icon-holder'>
-													<div class="icon-wrapper"><span
-															class='dt-stroke-icon icon icon-pointer'> </span></div>
-													<div class='dt-sc-counter-number' data-value='12'>12</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="vc_column-inner vc_custom_1468330402063">
+									<div class="wpb_wrapper">
+
+										<div class="vc_empty_space" style="height: 20px"><span
+												class="vc_empty_space_inner"></span></div>
+										<div class='dt-sc-counter type5 alter'>
+											<div class='dt-sc-couter-icon-holder'>
+												<div class="icon-wrapper"><span class='dt-stroke-icon icon icon-users'>
+													</span></div>
+												<div class='dt-sc-counter-number' data-value='150' data-append='K+'>
+													150K+
 												</div>
-												<h4>Branches</h4>
-												<p>So blinded by desire, that they cannot foresee the pain and trouble
-													that are bound to ensue.</p>
 											</div>
-											<div class="vc_empty_space" style="height: 20px"><span
+											<h4>Total Followers</h4>
+										</div>
+										<div class="vc_empty_space" style="height: 20px"><span
+												class="vc_empty_space_inner"></span></div>
+										<div class='dt-sc-counter type5 alter'>
+											<div class='dt-sc-couter-icon-holder'>
+												<div class="icon-wrapper"><span
+														class='dt-stroke-icon icon icon-glasses'> </span></div>
+												<div class='dt-sc-counter-number' data-value='16' data-append='+'>10
+												</div>
+											</div>
+											<h4>Years of Experience</h4>
+										</div>
+										<div class="vc_empty_space" style="height: 20px"><span
+												class="vc_empty_space_inner"></span></div>
+										<div class='dt-sc-counter type5 alter'>
+											<div class='dt-sc-couter-icon-holder'>
+												<div class="icon-wrapper"><span
+														class='dt-stroke-icon icon icon-pointer'> </span></div>
+												<div class='dt-sc-counter-number'>Upcoming</div>
+											</div>
+											<h4>Branch in noida</h4>
+											<!-- <p>So blinded by desire, that they cannot foresee the pain and trouble
+													that are bound to ensue.</p> -->
+										</div>
+										<!-- <div class="vc_empty_space" style="height: 20px"><span
 													class="vc_empty_space_inner"></span></div>
 											<div class='dt-sc-counter type5 alter'>
 												<div class='dt-sc-couter-icon-holder'>
@@ -2742,428 +3426,144 @@
 												<h4>In-house Staffs</h4>
 												<p>So blinded by desire, that they cannot foresee the pain and trouble
 													that are bound to ensue.</p>
-											</div>
-										</div>
+											</div> -->
+
 									</div>
 								</div>
 							</div>
-							<!-- About KRIYA section --> 
-
-							<!-- Our Special Team section --> 
-							<div class="vc_row-full-width vc_clearfix"></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false"
-								class="vc_row wpb_row vc_row-fluid vc_custom_1465557768038 vc_row-has-fill">
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class="vc_row wpb_row vc_inner vc_row-fluid">
-												<div class="rs_col-sm-12 wpb_column vc_column_container vc_col-sm-8">
-													<div class="vc_column-inner ">
-														<div class="wpb_wrapper">
-															<div class="dt-sc-videos-container">
-																<div class="dt-sc-video-wrapper">
-																	<iframe width="100%" height="347px" src="https://www.youtube.com/embed/AXWKOfz-5tY?si=olVXfkhxBpWdbujM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-																</div>
-																<ul class="dt-sc-videos">
-																	<li>
-																		<div class="dt-sc-video-item">
-																			<iframe src="https://www.youtube.com/embed/SA4qhasT0JQ?si=74k0V3CzA81pgbcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-																		</div>
-																	</li>
-																	<li>
-																		<div class="dt-sc-video-item">
-																			<iframe src="https://www.youtube.com/embed/ttkUBlzjBwk?si=1Pf2Iy1Crfl_ReBl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-																		</div>
-																	</li>
-																	<li>
-																		<div class="dt-sc-video-item">
-																			<iframe src="https://www.youtube.com/embed/nmdJFXQAAmc?si=_OMaRstl5On-bkMP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-																		</div>
-																	</li>
-																	<li>
-																		<div class="dt-sc-video-item"><iframe src="https://www.youtube.com/embed/N33352h3Gbs?si=U3AE5okvbQ2oZ5bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-																		</div>
-																	</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="rs_col-sm-12 wpb_column vc_column_container vc_col-sm-4">
-													<div class="vc_column-inner ">
-														<div class="wpb_wrapper">
-															<h3 style="text-align: left; " class="vc_custom_heading">
-																HEALING TO AWAKE HEALERS!</h3>
-															<div class="vc_empty_space" style="height: 16px"><span
-																	class="vc_empty_space_inner"></span></div>
-															<div class="wpb_text_column wpb_content_element ">
-																<div class="wpb_wrapper">
-																	<p style="line-height: 32px;">"We are all part of a spiritual journey during our time on Earth. <strong>I'm Reckhha Malhotra</strong>, and my own journey began from the moment I came into existence on this planet. Over the past 16 years, I have been wholeheartedly devoted to serving humanity with the primary goal of HEALING TO AWAKE HEALERS. My mission is to guide individuals in reconnecting with their inner potential, empowering them to become the creators of their own lives.</p>
-
-																</div>
-															</div>
-															<div
-																class="vc_btn3-container  fill_pattern_bg vc_btn3-left">
-																<button
-																	class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-flat vc_btn3-color-skincolor">View
-																	all Videos</button></div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Our Special Team section -->
-
-							<!-- Testimonial section -->
-							<div class="vc_row-full-width vc_clearfix"></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false"
-								class="vc_row wpb_row vc_row-fluid vc_custom_1465650903479 vc_row-has-fill">
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner vc_custom_1465557550526">
-										<div class="wpb_wrapper">
-											<div class='dt-sc-testimonial-wrapper carousel_items '>
-												<ul class="dt-sc-testimonial-carousel" style="
-												padding-left: 0px;">
-													<li>
-														<div class='dt-sc-testimonial '>
-															<div class="dt-sc-testimonial-quote">
-																<blockquote> <q>But I must explain to you how all this
-																		mistaken idea of denouncing pleasure and
-																		praising pain was born and I will give you a
-																		complete account of the system, and expound the
-																		actual teachings of the great explorer of the
-																		truth, the master-builder of human happiness. No
-																		one rejects, dislikes, or avoids pleasure
-																		itself, because it is pleasure.</q>
-																</blockquote>
-															</div>
-															<div class="dt-sc-testimonial-author"><span><img width="300"
-																		height="300"
-																		src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user5.jpg"
-																		class="attachment-full" alt="user5"
-																		decoding="async" loading="lazy"
-																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user5.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user5-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user5-180x180.jpg 180w"
-																		sizes="(max-width: 300px) 100vw, 300px" /></span><cite>-
-																	Judie Dench<small>Spa Therapist</small></cite></div>
-														</div>
-													</li>
-													<li>
-														<div class='dt-sc-testimonial '>
-															<div class="dt-sc-testimonial-quote">
-																<blockquote> <q>But I must explain to you how all this
-																		mistaken idea of denouncing pleasure and
-																		praising pain was born and I will give you a
-																		complete account of the system, and expound the
-																		actual teachings of the great explorer of the
-																		truth, the master-builder of human happiness. No
-																		one rejects, dislikes, or avoids pleasure
-																		itself, because it is pleasure.</q>
-																</blockquote>
-															</div>
-															<div class="dt-sc-testimonial-author"><span><img width="500"
-																		height="500"
-																		src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3.jpg"
-																		class="attachment-full" alt="user-thumb3"
-																		decoding="async" loading="lazy"
-																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3.jpg 500w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3-180x180.jpg 180w"
-																		sizes="(max-width: 500px) 100vw, 500px" /></span><cite>-
-																	Sara Finch<small>Yoga Specialist</small></cite>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class='dt-sc-testimonial '>
-															<div class="dt-sc-testimonial-quote">
-																<blockquote> <q>But I must explain to you how all this
-																		mistaken idea of denouncing pleasure and
-																		praising pain was born and I will give you a
-																		complete account of the system, and expound the
-																		actual teachings of the great explorer of the
-																		truth, the master-builder of human happiness. No
-																		one rejects, dislikes, or avoids pleasure
-																		itself, because it is pleasure.</q>
-																</blockquote>
-															</div>
-															<div class="dt-sc-testimonial-author"><span><img width="300"
-																		height="300"
-																		src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user5.jpg"
-																		class="attachment-full" alt="user5"
-																		decoding="async" loading="lazy"
-																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user5.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user5-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user5-180x180.jpg 180w"
-																		sizes="(max-width: 300px) 100vw, 300px" /></span><cite>-
-																	Judie Dench<small>Spa Therapist</small></cite></div>
-														</div>
-													</li>
-													<li>
-														<div class='dt-sc-testimonial '>
-															<div class="dt-sc-testimonial-quote">
-																<blockquote> <q>But I must explain to you how all this
-																		mistaken idea of denouncing pleasure and
-																		praising pain was born and I will give you a
-																		complete account of the system, and expound the
-																		actual teachings of the great explorer of the
-																		truth, the master-builder of human happiness. No
-																		one rejects, dislikes, or avoids pleasure
-																		itself, because it is pleasure.</q>
-																</blockquote>
-															</div>
-															<div class="dt-sc-testimonial-author"><span><img width="500"
-																		height="500"
-																		src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3.jpg"
-																		class="attachment-full" alt="user-thumb3"
-																		decoding="async" loading="lazy"
-																		srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3.jpg 500w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3-150x150.jpg 150w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3-300x300.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/06/user-thumb3-180x180.jpg 180w"
-																		sizes="(max-width: 500px) 100vw, 500px" /></span><cite>-
-																	Sara Finch<small>Yoga Specialist</small></cite>
-															</div>
-														</div>
-													</li>
-												</ul>
-												<div class="carousel-arrows"> <a href="#" class="testimonial-prev">
-														<span> </span> </a> <a href="#" class="testimonial-next"> <span>
-														</span> </a></div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class="vc_empty_space" style="height: 32px"><span
-													class="vc_empty_space_inner"></span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Testimonial section -->
-
-							
-
-							<!-- Recent Blogs section -->
-							<!-- <div class="vc_row-full-width vc_clearfix"></div>
-							<div data-vc-full-width="true" data-vc-full-width-init="false"
-								class="vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_custom_1465648092551 vc_row-has-fill">
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class="vc_empty_space" style="height: 80px"><span
-													class="vc_empty_space_inner"></span></div>
-										</div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container vc_col-sm-12">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<h2 style="text-align: center; "
-												class="vc_custom_heading vc_custom_1465458520703">Recent Blogs</h2>
-											<div
-												class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_40 vc_sep_stitch-dashed vc_sep_pos_align_center ico-size-small">
-												<span class="vc_sep_holder vc_sep_holder_l"><span
-														style="border-color:#a58251;" class="vc_sep_line"></span></span>
-												<div class="vc_icon_element vc_icon_element-outer vc_icon_element-img">
-													<div class="vc_icon_element-inner"><span
-															class="vc_icon_element-icon"><img width="60" height="60"
-																src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-learning.png"
-																class="vc_text_separator-img attachment-full"
-																alt="ico-learning" decoding="async"
-																loading="lazy" /></span></div>
-												</div><span class="vc_sep_holder vc_sep_holder_r"><span
-														style="border-color:#a58251;" class="vc_sep_line"></span></span>
-											</div>
-											<div class="wpb_text_column wpb_content_element  vc_custom_1465454356972">
-												<div class="wpb_wrapper">
-													<p style="text-align: center;">We at KRIYA provide various services
-														to the nature of the clients. Wish how you would like to spend
-														the time here <br> we can talk and come to a conclusion.</p>
-
-												</div>
-											</div>
-											<div class="vc_empty_space" style="height: 48px"><span
-													class="vc_empty_space_inner"></span></div>
-											<div class="vc_row wpb_row vc_inner vc_row-fluid">
-												<div class="wpb_column vc_column_container vc_col-sm-4">
-													<div class="vc_column-inner ">
-														<div class="wpb_wrapper">
-															<article id="post-36"
-																class="blog-entry post-36 post type-post status-publish format-standard has-post-thumbnail hentry category-training category-yoga outer-frame-border entry-date-left">
-																<div class="entry-thumb"> <a
-																		href="https://kriyawp.wpengine.com/practising-yoga-on-the-sea-shore-is-a-good-method/"><img
-																			width="1170" height="790"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2016/04/blog1.jpg"
-																			class="attachment-full size-full wp-post-image"
-																			alt="Practising yoga on the sea shore is a good method"
-																			decoding="async"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2016/04/blog1.jpg 1170w, https://kriyawp.wpengine.com/wp-content/uploads/2016/04/blog1-300x203.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2016/04/blog1-768x519.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2016/04/blog1-1024x691.jpg 1024w"
-																			sizes="(max-width: 1170px) 100vw, 1170px" /></a>
-																</div>
-																<div class="entry-details">
-																	<div class="entry-date "> <span>28</span>Apr </div>
-																	<div class="entry-meta-data ">
-																		<p class="author ">By <a
-																				href="https://kriyawp.wpengine.com/author/ram/">ram</a>
-																		</p>
-																		<p class=""><a class="comments"
-																				href="https://kriyawp.wpengine.com/practising-yoga-on-the-sea-shore-is-a-good-method//#respond">6
-																				Comments</a></p>
-																	</div>
-																	<div class="entry-title">
-																		<h4><a
-																				href="https://kriyawp.wpengine.com/practising-yoga-on-the-sea-shore-is-a-good-method/">Practising
-																				yoga on the sea shore is a good
-																				method</a></h4>
-																	</div>
-																	<div class="entry-body">
-																		<p>Mauris in erat justo. Nullam ac urna eu felis
-																			dapibus condimentum sit amet a augue. Sed
-																			non neque elit....</p>
-																	</div>
-																	<div class="vc_btn3-container vc_btn3-inline"> <a
-																			href="https://kriyawp.wpengine.com/practising-yoga-on-the-sea-shore-is-a-good-method/"
-																			class="vc_general vc_btn3 vc_btn3-size-xs vc_btn3-shape-square vc_btn3-style-classic vc_btn3-color-skincolor">Continue
-																			Reading... </a></div>
-																	<div class="entry-format "><a class="ico-format"
-																			href="#"></a></div>
-																</div>
-															</article>
-														</div>
-													</div>
-												</div>
-												<div class="wpb_column vc_column_container vc_col-sm-4">
-													<div class="vc_column-inner ">
-														<div class="wpb_wrapper">
-															<article id="post-106"
-																class="blog-entry post-106 post type-post status-publish format-gallery has-post-thumbnail hentry category-asana category-rest-position category-yoga tag-power post_format-post-format-gallery outer-frame-border entry-date-left">
-																<div class="entry-thumb">
-																	<ul class="entry-gallery-post-slider">
-																		<li><img src='https://kriyawp.wpengine.com/wp-content/uploads/2015/06/blog4.jpg'
-																				alt='Donec quis ex vel tincidunt' />
-																		</li>
-																		<li><img src='https://kriyawp.wpengine.com/wp-content/uploads/2015/06/blog9.jpg'
-																				alt='Donec quis ex vel tincidunt' />
-																		</li>
-																		<li><img src='https://kriyawp.wpengine.com/wp-content/uploads/2015/06/blog12.jpg'
-																				alt='Donec quis ex vel tincidunt' />
-																		</li>
-																	</ul>
-																</div>
-																<div class="entry-details">
-																	<div class="entry-date "> <span>18</span>Jun </div>
-																	<div class="entry-meta-data ">
-																		<p class="author ">By <a
-																				href="https://kriyawp.wpengine.com/author/ram/">ram</a>
-																		</p>
-																		<p class=""><a class="comments"
-																				href="https://kriyawp.wpengine.com/donec-quis-ex-vel-tincidunt//#respond">0
-																				Comment</a></p>
-																	</div>
-																	<div class="entry-title">
-																		<h4><a
-																				href="https://kriyawp.wpengine.com/donec-quis-ex-vel-tincidunt/">Donec
-																				quis ex vel tincidunt</a></h4>
-																	</div>
-																	<div class="entry-body">
-																		<p>Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit. Proin tincidunt nunc lorem,
-																			nec faucibus mi facilisis eget. Mauris
-																			laoreet,...</p>
-																	</div>
-																	<div class="vc_btn3-container vc_btn3-inline"> <a
-																			href="https://kriyawp.wpengine.com/donec-quis-ex-vel-tincidunt/"
-																			class="vc_general vc_btn3 vc_btn3-size-xs vc_btn3-shape-square vc_btn3-style-classic vc_btn3-color-skincolor">Continue
-																			Reading... </a></div>
-																	<div class="entry-format "><a class="ico-format"
-																			href="https://kriyawp.wpengine.com/type/gallery/"></a>
-																	</div>
-																</div>
-															</article>
-														</div>
-													</div>
-												</div>
-												<div class="wpb_column vc_column_container vc_col-sm-4">
-													<div class="vc_column-inner ">
-														<div class="wpb_wrapper">
-															<article id="post-105"
-																class="blog-entry post-105 post type-post status-publish format-standard has-post-thumbnail hentry category-stretching-poses tag-yoga outer-frame-border entry-date-left">
-																<div class="entry-thumb"> <a
-																		href="https://kriyawp.wpengine.com/integer-diam-gravida-fringilla/"><img
-																			width="1170" height="790"
-																			src="https://kriyawp.wpengine.com/wp-content/uploads/2015/06/blog2.jpg"
-																			class="attachment-full size-full wp-post-image"
-																			alt="Integer diam gravida fringilla"
-																			decoding="async"
-																			srcset="https://kriyawp.wpengine.com/wp-content/uploads/2015/06/blog2.jpg 1170w, https://kriyawp.wpengine.com/wp-content/uploads/2015/06/blog2-300x203.jpg 300w, https://kriyawp.wpengine.com/wp-content/uploads/2015/06/blog2-768x519.jpg 768w, https://kriyawp.wpengine.com/wp-content/uploads/2015/06/blog2-1024x691.jpg 1024w"
-																			sizes="(max-width: 1170px) 100vw, 1170px" /></a>
-																</div>
-																<div class="entry-details">
-																	<div class="entry-date "> <span>18</span>Jun </div>
-																	<div class="entry-meta-data ">
-																		<p class="author ">By <a
-																				href="https://kriyawp.wpengine.com/author/ram/">ram</a>
-																		</p>
-																		<p class=""><a class="comments"
-																				href="https://kriyawp.wpengine.com/integer-diam-gravida-fringilla//#respond">1
-																				Comments</a></p>
-																	</div>
-																	<div class="entry-title">
-																		<h4><a
-																				href="https://kriyawp.wpengine.com/integer-diam-gravida-fringilla/">Integer
-																				diam gravida fringilla</a></h4>
-																	</div>
-																	<div class="entry-body">
-																		<p>Lorem ipsum dolor sit amet, consectetur
-																			adipiscing elit. Proin tincidunt nunc lorem,
-																			nec faucibus mi facilisis eget. Mauris
-																			laoreet,...</p>
-																	</div>
-																	<div class="vc_btn3-container vc_btn3-inline"> <a
-																			href="https://kriyawp.wpengine.com/integer-diam-gravida-fringilla/"
-																			class="vc_general vc_btn3 vc_btn3-size-xs vc_btn3-shape-square vc_btn3-style-classic vc_btn3-color-skincolor">Continue
-																			Reading... </a></div>
-																	<div class="entry-format "><a class="ico-format"
-																			href="#"></a></div>
-																</div>
-															</article>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> -->
-							<!-- Recent Blogs section -->
-
-							<div class="vc_row-full-width vc_clearfix"></div>
-
 						</div>
-					</section>
-				</div>
-			</div><!-- ** Main - End ** -->
+						<!-- About KRIYA section -->
 
-			<!-- ** Footer ** -->
-			<footer id="footer" style="background: #b16994;">
-				
-				<div class="footer-copyright">
-					<div class="container">
+						<!-- Testimonial section -->
+						<div class="vc_row-full-width vc_clearfix"></div>
+						<h2 style="text-align: center; " class="vc_custom_heading vc_custom_1465715640653 mt-5">Client Testimonial
+						</h2>
 						<div
-							class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_30 vc_sep_stitch-dashed vc_sep_border_width_3 vc_sep_pos_align_center vc_custom_1466493435815">
-							<span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span>
+							class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_40 vc_sep_stitch-dashed vc_sep_pos_align_center ico-size-small">
+							<span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#a58251;"
+									class="vc_sep_line"></span></span>
 							<div class="vc_icon_element vc_icon_element-outer vc_icon_element-img">
-								<div class="vc_icon_element-inner"><span class="vc_icon_element-icon"><img width="69"
-											height="24"
-											src="https://kriyawp.wpengine.com/wp-content/uploads/2016/04/floral-decor.png"
-											alt="floral-decor" /></span></div>
-							</div><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+								<div class="vc_icon_element-inner"><span class="vc_icon_element-icon"><img width="60"
+											height="60"
+											src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-master.png"
+											class="vc_text_separator-img attachment-full" alt="ico-master"
+											decoding="async" loading="lazy" /></span>
+								</div>
+							</div><span class="vc_sep_holder vc_sep_holder_r"><span style="border-color:#a58251;"
+									class="vc_sep_line"></span></span>
 						</div>
-						<div class="aligncenter">Reckhha Malhotra © 2023.<a href="#"></a></div>
+						<div class="slider data-vc-full-width vc_row wpb_row vc_row-fluid vc-fill-notop-padding vc_custom_1465650713992 vc_row-has-fill"
+							style="background: url(wp-content/themes/kriya/images/pattern-chakras-white.png);">
+							<input type="radio" name="slider" title="slide1" id="slide1" checked="checked" class="slider__nav" />
+    <input type="radio" name="slider" title="slide2" id="slide2" class="slider__nav" />
+    <input type="radio" name="slider" title="slide3" id="slide3" class="slider__nav" />
+    <input type="radio" name="slider" title="slide4" id="slide4" class="slider__nav" />
+    <div class="slider__inner">
+								<div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
+									<h2 class="slider__caption">Kusum Sharma</h2>
+									<p class="slider__txt">I've felt a lot of relief from tension throughout the
+										sessions Reckhha Mam. I feel "lighter" and more in-tune with myself after a
+										session, and I am more prepared to deal with life's challenges.I also feel
+										motivated and reaffirmed that I'm spiritually exactly where I should be.Grateful
+										to you mam🙏🏼😊</p>
+								</div>
+								<div class="slider__contents"><i class="slider__image fa fa-newspaper-o"></i>
+									<h2 class="slider__caption">Harshada</h2>
+									<p class="slider__txt">I have been member of Soul family for six months now. I have taken personal and group healings from Mam. Also attended workshop on Hanuman Raksha Kavach and Candle Manifestation. Candle manifestation workshop has really worked like magic as 3 out of my 4 wishes got manifested effortlessly including Marriage. 😃 
+									</p>
+								</div>
+								<div class="slider__contents"><i class="slider__image fa fa-television"></i>
+									<h2 class="slider__caption">Priyanka</h2>
+									<p class="slider__txt">Hiee this is my testimonial for mam initially I saw her on you tube n took a lot of sessions on you tube and it really helped me a lot n then I joined this wats app community and personally took a healing session with her it was soo powerful n amazing 👏🎉 I got instant relief in many aspects of my life and I m continuing with her sessions 🙏❤️ thank you soo much mam gratitude </p>
+								</div>
+								<div class="slider__contents"><i class="slider__image fa fa-diamond"></i>
+									<h2 class="slider__caption">Diksha</h2>
+									<p class="slider__txt">Very big thank you to mam from mr side as after very positve..before session I was very much worried about my colitis disease and I restricted my self fro eating, and doing lots of activities..But after session I don't know what magic happens I am very much positve and pain also reduce..since session till date I ate lot of fast food which I can't ate since 1.5 years due to cotitis..I would like to attend more sessions of mam.. once again thank you.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial section -->
+
+
+						<div class="vc_row-full-width vc_clearfix"></div>
+					</div>
+				</section>
+			</div>
+		</div><!-- ** Main - End ** -->
+
+		<!-- ** Footer ** -->
+		<footer id="footer" style="background: #b16994;">
+
+			<div class="footer-copyright"
+				style="background: url(wp-content/themes/kriya/images/pattern-chakras-white.png );">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 pt-5">
+							<h4 style="color: #67308f; font-family: overlock;">Contact Us</h4>
+
+							<div><a href="#">info@healholistic.in</a>
+
+							</div>
+							<div>
+								<a href="#">+91 9911543666</a>
+							</div>
+
+						</div>
+						<div class="col-md-4 pt-5">
+							<div
+								class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_30 vc_sep_stitch-dashed vc_sep_border_width_3 vc_sep_pos_align_center vc_custom_1466493435815">
+								<img width="50px" height="24" src="footerlogo.png" class="aligncenter"
+									alt="floral-decor" style="max-width: none;" />
+							</div>
+							<h5 class="aligncenter" style="color: #67308f; font-family: overlock;">Heal Holistic ©
+								2023.<a href="#"></a>
+							</h5>
+							<div class="rounded-social-buttons">
+								<!-- <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+								<a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i
+										class="fab fa-twitter"></i></a>
+								<!-- <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a> -->
+								<a class="social-button youtube"
+									href="https://youtube.com/@reckhhamalhotraenglish9460?si=TdL70P-sU2YeLJ_f"
+									target="_blank"><i class="fab fa-youtube"></i></a>
+								<a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i
+										class="fab fa-instagram"></i></a>
+							</div>
+						</div>
+						<div class="col-md-4 pt-5 ">
+							<div class="working" style="display: flex;flex-direction: column;">
+								<div class="alignright">
+									<h4 style="color: #67308f; font-family: overlock;">Working Hours</h4>
+								</div>
+								<div class="alignright" style="color: #fff;">Timing- 10:00 AM to 6:00 PM</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
-			</footer><!-- ** Footer - End ** -->
-		</div><!-- ** Inner Wrapper - End ** -->
+			</div>
+	</div>
+	</footer>
+	<!-- ** Footer - End ** -->
+	</div>
+	<!-- ** Inner Wrapper - End ** -->
 	</div><!-- ** Wrapper - End ** -->
+	<script>
+		// Add JavaScript to automatically switch slides
+		let currentSlide = 1;
+		const totalSlides = 4; // Change this if you have more slides
+	
+		function nextSlide() {
+		  currentSlide++;
+		  if (currentSlide > totalSlides) {
+			currentSlide = 1;
+		  }
+		  document.getElementById(`slide${currentSlide}`).checked = true;
+		}
+	
+		// Automatically switch slides every 3 seconds (adjust as needed)
+		setInterval(nextSlide, 3000);
+	  </script>
 	<script>
 		(function (body) {
 			'use strict';
@@ -3213,6 +3613,12 @@
 		var yith_wcwl_l10n = { "ajax_url": "\/wp-admin\/admin-ajax.php", "redirect_to_cart": "no", "multi_wishlist": "", "hide_add_button": "1", "enable_ajax_loading": "", "ajax_loader_url": "https:\/\/kriyawp.wpengine.com\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg", "remove_from_wishlist_after_add_to_cart": "1", "is_wishlist_responsive": "1", "time_to_close_prettyphoto": "3000", "fragments_index_glue": ".", "reload_on_found_variation": "1", "labels": { "cookie_disabled": "We are sorry, but this feature is available only if cookies on your browser are enabled.", "added_to_cart_message": "<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>" }, "actions": { "add_to_wishlist_action": "add_to_wishlist", "remove_from_wishlist_action": "remove_from_wishlist", "reload_wishlist_and_adding_elem_action": "reload_wishlist_and_adding_elem", "load_mobile_action": "load_mobile", "delete_item_action": "delete_item", "save_title_action": "save_title", "save_privacy_action": "save_privacy", "load_fragments": "load_fragments" } };
 		/* ]]> */
 	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
 	<script type='text/javascript'
 		src='https://kriyawp.wpengine.com/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl.js?ver=3.0.17'
 		id='jquery-yith-wcwl-js'></script>
@@ -3314,6 +3720,21 @@
 		id='vc_tabs_script-js'></script>
 	<script type="text/css" id="tmpl-tribe_events_pro_customizer_css"></script>
 	<style type="text/css" id="tribe_events_pro_customizer_css"></style>
+	<script>
+		$(document).ready(function () {
+			$('.dt-sc-testimonial-carousel').slick({
+				arrows: true,  // You can customize the navigation arrows
+				prevArrow: $('.testimonial-prev'),  // Specify your custom previous arrow element
+				nextArrow: $('.testimonial-next'),  // Specify your custom next arrow element
+				infinite: true,  // Set to false to disable infinite loop
+				slidesToShow: 1,  // Number of slides to show at a time
+				slidesToScroll: 1,  // Number of slides to scroll at a time
+				autoplay: true,  // Set to true for automatic slide transition
+				autoplaySpeed: 5000,  // Set the speed of automatic slide transition (in milliseconds)
+			});
+		});
+	</script>
+
 </body>
 
 </html>
